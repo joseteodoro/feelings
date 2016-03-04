@@ -14,43 +14,51 @@
 	crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<style type="text/css">
-.vertical-center {
-	min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-	min-height: 100vh; /* These two lines are counted as one :-)       */
-	display: flex;
-	align-items: center;
-}
-</style>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="form-group has-success">
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<span id="helpBlock2" class="help-block text-center">How
-								does people feel about?</span>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-6">
+										<button type="button" class="btn btn-primary">Sad!</button>
+									</div>
+									<div class="col-md-6"></div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<form role="form">
+					<div class="col-md-6">
 						<div class="row">
-							<div class="col-md-10">
-								<input class="form-control" placeholder="Type a subject here"
-									id="subject" type="text" />
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-6">
+										<button type="button" class="btn btn-danger">Angry!</button>
+									</div>
+									<div class="col-md-6"></div>
+								</div>
 							</div>
-							<div class="col-md-2">
-								<button type="submit" class="btn btn-success">?</button>
-							</div>
+							<div class="col-md-6"></div>
 						</div>
-					</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-success">Happy!</button>
+					</div>
+					<div class="col-md-4"></div>
 				</div>
 			</div>
-			<div class="col-md-4"></div>
 		</div>
 	</div>
-
 </body>
 </html>

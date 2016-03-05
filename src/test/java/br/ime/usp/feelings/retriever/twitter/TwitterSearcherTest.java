@@ -6,6 +6,8 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
+import br.ime.usp.feelings.retriever.content.twitter.Finder;
+import br.ime.usp.feelings.retriever.content.twitter.TwitterFinder;
 import twitter4j.Query;
 import twitter4j.QueryResult;
 import twitter4j.Status;
@@ -20,7 +22,7 @@ import twitter4j.conf.ConfigurationBuilder;
  * @author jteodoro
  * 
  * Use to test your connection and keys provided by Twitter. Twitter has a request limit per minute,
- * so this test is disabled and does not run on the build.
+ * so this test does not run on the build.
  * 
  * To run you need to map your twitter oAth. Something like:
  * 
@@ -39,7 +41,7 @@ public class TwitterSearcherTest {
 	}
 	
 	private void connectAndSearchAndPrint() {
-		TwitterSearcher twitterSearcher = new TwitterSearcher();
+		Finder twitterSearcher = new TwitterFinder();
 		String subject = "brazil";
 		twitterSearcher.configureConnection();
 		Collection<String> results = twitterSearcher.search(subject);

@@ -1,4 +1,4 @@
-package br.ime.usp.feelings.retriever.twitter;
+package br.ime.usp.feelings.retriever.content.twitter;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -21,17 +21,17 @@ import twitter4j.conf.Configuration;
  *
  * Ask Twitter about the subject and create our resultset.
  */
-public class TwitterSearcher {
+public class TwitterFinder implements Finder {
 
 	private final Configuration twitterdAuthConfiguration;
 	
 	private Twitter twitter;
 
-	public TwitterSearcher(Configuration twitterdAuthConfiguration) {
+	public TwitterFinder(Configuration twitterdAuthConfiguration) {
 		this.twitterdAuthConfiguration = twitterdAuthConfiguration;
 	}
 	
-	public TwitterSearcher() {
+	public TwitterFinder() {
 		this.twitterdAuthConfiguration = null;
 	}
 
@@ -43,11 +43,13 @@ public class TwitterSearcher {
 	 * @param subject subject to ask twitter
 	 * @return a collection with the messages.
 	 */
+	@Override
 	public Collection<String> search(String subject) {
 		String queryString = String.format("q=%s", subject);
 		return doSearch(queryString);
 	}
 
+	@Override
 	public void configureConnection() {
 		TwitterFactory factory = setupTwitterFactory();
 		twitter = factory.getInstance();

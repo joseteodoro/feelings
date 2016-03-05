@@ -3,5 +3,13 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>How does people feel</display-name>
+	<display-name>How does people feel</display-name>
+	<servlet>
+		<servlet-name>feelingsSeach</servlet-name>
+		<servlet-class>br.ime.usp.feelings.servlet.FeelingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>feelingsSeach</servlet-name>
+		<url-pattern>/feelingsSeach</url-pattern>
+	</servlet-mapping>
 </web-app>

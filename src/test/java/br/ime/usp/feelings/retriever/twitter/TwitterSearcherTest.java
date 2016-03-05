@@ -41,6 +41,7 @@ public class TwitterSearcherTest {
 	private void connectAndSearchAndPrint() {
 		TwitterSearcher twitterSearcher = new TwitterSearcher();
 		String subject = "brazil";
+		twitterSearcher.configureConnection();
 		Collection<String> results = twitterSearcher.search(subject);
 		Assert.assertFalse(results.isEmpty());
 		results.forEach(result -> System.out.println(result));

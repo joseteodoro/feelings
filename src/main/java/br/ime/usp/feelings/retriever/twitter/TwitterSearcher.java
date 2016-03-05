@@ -24,6 +24,8 @@ import twitter4j.conf.Configuration;
 public class TwitterSearcher {
 
 	private final Configuration twitterdAuthConfiguration;
+	
+	private Twitter twitter;
 
 	public TwitterSearcher(Configuration twitterdAuthConfiguration) {
 		this.twitterdAuthConfiguration = twitterdAuthConfiguration;
@@ -33,21 +35,26 @@ public class TwitterSearcher {
 		this.twitterdAuthConfiguration = null;
 	}
 
+	/*
+	 * Call the method configureConnection() before call this method.
+	 * 
+	 * Ask Twitter about the subject and create a list with the text messages.
+	 * 
+	 * @param subject subject to ask twitter
+	 * @return a collection with the messages.
+	 */
 	public Collection<String> search(String subject) {
 		String queryString = String.format("q=%s", subject);
-		Collection<String> results = configureAndSearch(queryString);
-		return results;
+		return doSearch(queryString);
 	}
 
-	private Collection<String> configureAndSearch(String queryString) {
+	public void configureConnection() {
 		TwitterFactory factory = setupTwitterFactory();
-		Query query = new Query(queryString);
-		Twitter twitter = factory.getInstance();
-		Collection<String> results = doSearch(queryString, query, twitter);
-		return results;
+		twitter = factory.getInstance();
 	}
 
-	private Collection<String> doSearch(String queryString, Query query, Twitter twitter) {
+	private Collection<String> doSearch(String queryString) {
+		Query query = new Query(queryString);
 		QueryResult result;
 		Collection<String> results = new HashSet<String>();
 		try {

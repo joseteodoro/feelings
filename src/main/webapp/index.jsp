@@ -15,17 +15,14 @@
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <style type="text/css">
-.vertical-center {
-	min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-	min-height: 100vh; /* These two lines are counted as one :-)       */
-	display: flex;
-	align-items: center;
+.pushDown {
+	margin-top: 20%;
 }
 </style>
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row pushDown">
 			<div class="col-md-4"></div>
 			<div class="form-group has-success">
 				<div class="col-md-4">

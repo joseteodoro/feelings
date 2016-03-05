@@ -15,23 +15,26 @@
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <style type="text/css">
+.pushDown {
+	margin-top: 20%;
+}
 .anger {
-	width: ${requestScope.Anger.scale()}%;
+	width: ${requestScope.Anger.scaleToShow()}%;
 	height:auto;
 }
 .sadness {
-	width: ${requestScope.Sadness.scale()}%;
+	width: ${requestScope.Sadness.scaleToShow()}%;
 	height:auto;
 }
 .joy {
-	width: ${requestScope.Joy.scale()}%;
+	width: ${requestScope.Joy.scaleToShow()}%;
 	height:auto;
 }
 </style>
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row pushDown">
 			<div class="col-md-12">
 				<div class="col-md-4 text-center"></div>
 				<div class="col-md-4 text-center">

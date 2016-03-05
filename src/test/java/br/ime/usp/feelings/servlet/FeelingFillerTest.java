@@ -1,22 +1,13 @@
 package br.ime.usp.feelings.servlet;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.security.Principal;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Enumeration;
-import java.util.Locale;
-import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.ServletInputStream;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -30,8 +21,7 @@ public class FeelingFillerTest {
 	@Test
 	public void fillAndRedirectARequest() throws ServletException, IOException {
 		String subject = "subject";
-		float score = 0.5f;
-		Feeling feeling = new Feeling(FeelingEnum.JOY, score);
+		Feeling feeling = new Feeling(FeelingEnum.JOY, 0.5f);
 		Collection<Feeling> feelings = Arrays.asList(feeling);
 		FeelingActor feelingActor = setupActor(subject, feelings);
 		HttpServletRequest request = setupRequest(subject);
@@ -40,7 +30,7 @@ public class FeelingFillerTest {
 
 		feelingFiller.fillAndRedirect(request, response);
 		Mockito.verify(request).getParameter(FeelingFiller.SUBJECT_PARAMETER_NAME);
-		Mockito.verify(request).setAttribute(FeelingEnum.JOY.getLabel(), score);
+		Mockito.verify(request).setAttribute(FeelingEnum.JOY.getLabel(), feeling);
 		Mockito.verify(request).getRequestDispatcher(FeelingFiller.REDIRECT_DESTINATION);
 	}
 

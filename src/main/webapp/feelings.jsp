@@ -14,49 +14,43 @@
 	crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<style type="text/css">
+.anger {
+	width: ${requestScope.Anger.scale()}%;
+	height:auto;
+}
+.sadness {
+	width: ${requestScope.Sadness.scale()}%;
+	height:auto;
+}
+.joy {
+	width: ${requestScope.Joy.scale()}%;
+	height:auto;
+}
+</style>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-6"></div>
-							<div class="col-md-6">
-								<div class="row">
-									<div class="col-md-6">
-										<button type="button" class="btn btn-primary">Sad!</button>
-									</div>
-									<div class="col-md-6"></div>
-								</div>
-							</div>
+				<div class="col-md-4 text-center"></div>
+				<div class="col-md-4 text-center">
+					<div class="row text-center">
+						<div class="col-md-4 text-center">
+							<img class="anger" src="images/emoticon_anger.png" alt="anger" /><br /><br />
+							<span class="label label-danger">Anger</span>
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="row">
-									<div class="col-md-6">
-										<button type="button" class="btn btn-danger">Angry!</button>
-									</div>
-									<div class="col-md-6"></div>
-								</div>
-							</div>
-							<div class="col-md-6"></div>
+						<div class="col-md-4 text-center">
+							<img class="sadness" src="images/emoticon_sad.png" alt="sadness" /><br /><br />
+							<span class="label label-warning">Sadness</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<img class="joy" src="images/emoticon_joy.png" alt="joy" /><br /><br />
+							<span class="label label-success">Joy</span>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12"></div>
-				</div>
-				<div class="row">
-					<div class="col-md-4"></div>
-					<div class="col-md-4">
-						<button type="button" class="btn btn-success">Happy!</button>
-					</div>
-					<div class="col-md-4"></div>
-				</div>
+				<div class="col-md-4 text-center"></div>
 			</div>
 		</div>
 	</div>

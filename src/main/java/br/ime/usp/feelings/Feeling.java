@@ -28,6 +28,8 @@ public class Feeling {
 		this.score = score;
 	}
 	
-	
+	public float scale() {
+		return score*100f;
+	}
 	
 }

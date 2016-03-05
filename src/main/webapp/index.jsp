@@ -35,7 +35,7 @@
 								does people feel about?</span>
 						</div>
 					</div>
-					<form role="form">
+					<form role="form" action="/feelingsSeach">
 						<div class="row">
 							<div class="col-md-10">
 								<input class="form-control" placeholder="Type a subject here"

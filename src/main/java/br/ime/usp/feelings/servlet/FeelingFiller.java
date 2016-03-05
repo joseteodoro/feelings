@@ -35,7 +35,7 @@ public class FeelingFiller {
 	}
 
 	private void putFeelingsOnRequest(HttpServletRequest request, Collection<Feeling> feelings) {
-		feelings.forEach(feeling -> request.setAttribute(feeling.getFeeling().getLabel(), feeling.getScore()));
+		feelings.forEach(feeling -> request.setAttribute(feeling.getFeeling().getLabel(), feeling));
 	}
 
 	private Collection<Feeling> getFeelings(String subject) {

@@ -3,14 +3,14 @@ package br.ime.usp.feelings;
 import java.util.Collection;
 
 import br.ime.usp.feelings.retriever.ContentRetriever;
-import br.ime.usp.feelings.retriever.DefaultRetriverFactory;
 import br.ime.usp.feelings.retriever.FeelingsRetriever;
+import br.ime.usp.feelings.retriever.RetrieverFactory;
 
 public class FeelingActor {
 	
-	private final DefaultRetriverFactory factory;
+	private final RetrieverFactory factory;
 	
-	public FeelingActor(DefaultRetriverFactory factory) {
+	public FeelingActor(RetrieverFactory factory) {
 		this.factory = factory;
 	}
 	

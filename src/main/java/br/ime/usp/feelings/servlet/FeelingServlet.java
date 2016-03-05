@@ -20,16 +20,12 @@ import br.ime.usp.feelings.retriever.DefaultRetriverFactory;
  */
 public class FeelingServlet extends HttpServlet {
 	
-	private final static String SUBJECT_PARAMETER_NAME = "subject";
-	
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-		String subject = request.getParameter(SUBJECT_PARAMETER_NAME);
-		FeelingActor feelingActor = new FeelingActor(new DefaultRetriverFactory());
-		Collection<Feeling> feelings = feelingActor.getFeelings(subject);
-		
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		DefaultRetriverFactory factory = new DefaultRetriverFactory();
+		FeelingActor actor = new FeelingActor(factory);
+		FeelingFiller feelingFiller = new FeelingFiller(actor);
+		feelingFiller.fillAndRedirect(request, response);
 	}
-
-
 	
 }

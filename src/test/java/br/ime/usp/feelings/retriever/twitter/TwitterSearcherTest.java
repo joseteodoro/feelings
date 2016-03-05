@@ -42,7 +42,7 @@ public class TwitterSearcherTest {
 	
 	private void connectAndSearchAndPrint() {
 		Finder twitterSearcher = new TwitterFinder();
-		String subject = "brazil";
+		String subject = "clinton";
 		twitterSearcher.configureConnection();
 		Collection<String> results = twitterSearcher.search(subject);
 		Assert.assertFalse(results.isEmpty());

@@ -36,7 +36,7 @@
 						<div class="row">
 							<div class="col-md-10">
 								<input class="form-control" placeholder="Type a subject here"
-									id="subject" type="text" />
+									id="subject" type="text" name="subject"/>
 							</div>
 							<div class="col-md-2">
 								<button type="submit" class="btn btn-success">?</button>

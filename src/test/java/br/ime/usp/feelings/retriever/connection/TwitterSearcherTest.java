@@ -1,21 +1,11 @@
 package br.ime.usp.feelings.retriever.connection;
 
 import java.util.Collection;
-import java.util.List;
 
 import org.junit.Assert;
-import org.junit.Test;
 
 import br.ime.usp.feelings.retriever.content.twitter.Finder;
 import br.ime.usp.feelings.retriever.content.twitter.TwitterFinder;
-import twitter4j.Query;
-import twitter4j.QueryResult;
-import twitter4j.Status;
-import twitter4j.Twitter;
-import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
-import twitter4j.conf.Configuration;
-import twitter4j.conf.ConfigurationBuilder;
 
 /**
  * 
@@ -42,7 +32,7 @@ public class TwitterSearcherTest {
 	
 	private void connectAndSearchAndPrint() {
 		Finder twitterSearcher = new TwitterFinder();
-		String subject = "clinton";
+		String subject = "trumph";
 		twitterSearcher.configureConnection();
 		Collection<String> results = twitterSearcher.search(subject);
 		Assert.assertFalse(results.isEmpty());

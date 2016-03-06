@@ -1,5 +1,7 @@
 package br.ime.usp.feelings.retriever.content.twitter;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
@@ -19,18 +21,18 @@ import twitter4j.conf.Configuration;
  * 
  * @author jteodoro
  *
- * Ask Twitter about the subject and create our resultset.
+ *         Ask Twitter about the subject and create our resultset.
  */
 public class TwitterFinder implements Finder {
 
 	private final Configuration twitterdAuthConfiguration;
-	
+
 	private Twitter twitter;
 
 	public TwitterFinder(Configuration twitterdAuthConfiguration) {
 		this.twitterdAuthConfiguration = twitterdAuthConfiguration;
 	}
-	
+
 	public TwitterFinder() {
 		this.twitterdAuthConfiguration = null;
 	}
@@ -41,12 +43,13 @@ public class TwitterFinder implements Finder {
 	 * Ask Twitter about the subject and create a list with the text messages.
 	 * 
 	 * @param subject subject to ask twitter
+	 * 
 	 * @return a collection with the messages.
 	 */
 	@Override
 	public Collection<String> search(String subject) {
-		String queryString = String.format("q=%s", subject);
-		return doSearch(queryString);
+		String encoded = this.encodeURIComponent(subject);
+		return doSearch(encoded);
 	}
 
 	@Override
@@ -57,6 +60,8 @@ public class TwitterFinder implements Finder {
 
 	private Collection<String> doSearch(String queryString) {
 		Query query = new Query(queryString);
+		query.setLang("en");
+		query.setCount(25);
 		QueryResult result;
 		Collection<String> results = new HashSet<String>();
 		try {
@@ -76,17 +81,36 @@ public class TwitterFinder implements Finder {
 	}
 
 	private TwitterFactory setupTwitterFactory() {
-		if (twitterdAuthConfiguration!=null) {
-		return new TwitterFactory(twitterdAuthConfiguration);
+		if (twitterdAuthConfiguration != null) {
+			return new TwitterFactory(twitterdAuthConfiguration);
 		}
 		/*
-		 * constructor using env vars:
-		 * $ export twitter4j.oauth.consumerKey=*********************
-		 * $ export twitter4j.oauth.consumerSecret=******************************************
-		 * $ export twitter4j.oauth.accessToken=**************************************************
-		 * $ export twitter4j.oauth.accessTokenSecret=******************************************
+		 * constructor using env vars: $ export
+		 * twitter4j.oauth.consumerKey=********************* $ export
+		 * twitter4j.oauth.consumerSecret=**************************************
+		 * **** $ export
+		 * twitter4j.oauth.accessToken=*****************************************
+		 * ********* $ export
+		 * twitter4j.oauth.accessTokenSecret=***********************************
+		 * *******
 		 */
 		return new TwitterFactory();
+	}
+
+	/**
+	 * javascript's like hack
+	 * 
+	 * @param s string to encode
+	 * @return encoded string
+	 */
+	public String encodeURIComponent(String s) {
+		try {
+			return URLEncoder.encode(s, "UTF-8").replaceAll("\\+", "%20").replaceAll("\\%21", "!")
+					.replaceAll("\\%27", "'").replaceAll("\\%28", "(").replaceAll("\\%29", ")")
+					.replaceAll("\\%7E", "~");
+		} catch (UnsupportedEncodingException e) {
+			return s;
+		}
 	}
 
 }

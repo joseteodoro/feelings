@@ -18,20 +18,16 @@ public class WatsonEmotionAdapter {
 
 	public AlchemyLanguageEmotionAnswer callWatson(String parameter) {
 		String json = this.caller.call(parameter);
-		String cleanedJson = this.removeResultStatus(json);
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
-			AlchemyLanguageEmotionAnswer readValue = objectMapper.readValue(cleanedJson, AlchemyLanguageEmotionAnswer.class);
+			System.out.println(json);
+			AlchemyLanguageEmotionAnswer readValue = objectMapper.readValue(json, AlchemyRestAnswer.class).getDocEmotions();
 			return readValue;
-		} catch (IOException ioex) {
+		} catch (Exception ioex) {
 			String messageError = String.format("Error reading data from JSON response. JSON: [%s].", json);
 			Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, messageError, ioex);
 			throw new RetrieveException(messageError, ioex);
 		}
-	}
-
-	private String removeResultStatus(String json) {
-		return new EmotionJSONCleaner().clean(json);
 	}
 	
 }

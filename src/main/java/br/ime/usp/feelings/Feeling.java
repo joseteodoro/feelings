@@ -31,5 +31,31 @@ public class Feeling {
 	public float scaleToShow() {
 		return score*100f+1;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((feeling == null) ? 0 : feeling.hashCode());
+		result = prime * result + Float.floatToIntBits(score);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Feeling other = (Feeling) obj;
+		if (feeling != other.feeling)
+			return false;
+		if (Float.floatToIntBits(score) != Float.floatToIntBits(other.score))
+			return false;
+		return true;
+	}
+	
 	
 }

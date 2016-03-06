@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.ime.usp.feelings.rank.DefaultRankContentFactory;
 import br.ime.usp.feelings.rank.FakeRankItensContentFactory;
 import br.ime.usp.feelings.rank.RankItem;
 import br.ime.usp.feelings.retriever.FeelingsActor;
@@ -20,8 +21,9 @@ public class RankServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// just for local testing
-		 ContentFactory<RankItem> factory = new FakeRankItensContentFactory();
-//		RetrieverFactory factory = new DefaultRankContentFactory();
+		ContentFactory<RankItem> factory;
+		factory = new DefaultRankContentFactory();
+		factory = new FakeRankItensContentFactory();
 		FeelingsActor<RankItem> actor = new FeelingsActor<>(factory);
 		RankFiller rankFiller = new RankFiller(actor);
 		rankFiller.fillAndRedirect(request, response);

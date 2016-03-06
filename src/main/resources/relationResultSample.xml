@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rep sts="OK">
+<doc id="">
+  <text>RT @BikinInMaine: MT @TeriGRight: It's not JUST any Presidential election! #TCOT #2A https://t.co/X4JuVwGQzT #CruzCrew #PJNETRT @astroehlein: Fico's xenophobic rhetoric didn't help him: He lost his majority &amp; extreme right will enter Slovak parliament https://t.co?@MrAyeDee him saying e can afford his kids school fees jst reminded me dt Buhari is a complete liar, during d election e claimed to be poorExactly one of these actually matters to me in this election. ( https://t.co/LiyHhc1Say ; https://t.co/0SNpDxGUxJ ) https://t.co/fsiiGS8zKZ@KiryowaKk We are answering every claim in the petition filed by @AmamaMbabazi. As far as we are concerned, the election was fair @ugandarnCruz, have you even looked at the swing states for the gen election? You have no chance! Drop out now so we can can beat Hillary.RT @AshakaSaleh: Former NSA Sambo Dasuki &amp; his friends praying to God for Jonathan to WIN the 2015 election . #throwback3015elections https?Big kudos to election workers - Corpus Christi Caller https://t.co/lZIu1cxuWhAfter #GE16, where next for Ireland, an tOireachtas and the diaspora abroad? My thoughts since the election.  https://t.co/zzToz69AX1@MRVChennai mr. Kk the next pm candidate for 2019 election for Congress will b able to guide us thru poverty, capitalism,  corruptionRT @AtusiubaOkwy: @inecnigeria If u don't cancel Bende LGA election in #AbiaNorthRerun, it means that Nigerians has to be prepared cos we a?Flint becomes U.S. Democratic flash point, but residents want action  https://t.co/uUS1J98ptFAbia North senatorial re-run election inconclusive, INEC says https://t.co/0xgZ6uED7k</text>
+  <sents>
+    <sent sid="0" begin="0" end="13">
+      <text>RT @BikinInMaine: MT @TeriGRight: It's not JUST any Presidential election!</text>
+      <parse score="-8.81344">[FRAG [NP RT_NNP @BikinInMaine_NNP NP] :_: [NP MT_NNP @TeriGRight_NN NP] :_: [S [NP It_PRP NP] [VP 's_VBZ not_RB [VP JUST_VB [NP any_DT Presidential_JJ election_NN NP] VP] VP] S] !_. FRAG]</parse>
+      <dependency_parse>RT NNP 1 -I @BikinInMaine NNP 9 NP : : 9 -E MT NNP 4 -I @TeriGRight NN 9 NP : : 9 -E It PRP 9 NP 's VBZ 9 -E not RB 9 -E JUST VB -1 VP any DT 12 -I Presidential JJ 12 -I election NN 9 NP ! . 9 -E </dependency_parse>
+      <usd_dependency_parse>RT NNP 1 name @BikinInMaine NNP 9 nsubj : : 9 punct MT NNP 4 name @TeriGRight NN 9 nsubj : : 9 punct It PRP 9 nsubj 's VBZ 9 aux not RB 9 neg JUST VB -1 root any DT 12 det Presidential JJ 12 amod election NN 9 dobj ! . 9 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="0" begin="0" end="1" type="0" POS="NNP" lemma="rt">RT</token>
+        <token tid="1" begin="3" end="15" type="0" POS="NNP" lemma="@bikininmaine">@BikinInMaine</token>
+        <token tid="2" begin="16" end="16" type="2048" POS=":" lemma=":">:</token>
+        <token tid="3" begin="18" end="19" type="0" POS="NNP" lemma="mt">MT</token>
+        <token tid="4" begin="21" end="31" type="0" POS="NN" lemma="@terigright">@TeriGRight</token>
+        <token tid="5" begin="32" end="32" type="2048" POS=":" lemma=":">:</token>
+        <token tid="6" begin="34" end="35" type="0" POS="PRP" lemma="it">It</token>
+        <token tid="7" begin="36" end="37" type="0" POS="VBZ" lemma="be">'s</token>
+        <token tid="8" begin="39" end="41" type="0" POS="RB" lemma="not">not</token>
+        <token tid="9" begin="43" end="46" type="0" POS="VB" lemma="just">JUST</token>
+        <token tid="10" begin="48" end="50" type="0" POS="DT" lemma="any">any</token>
+        <token tid="11" begin="52" end="63" type="0" POS="JJ" lemma="presidential">Presidential</token>
+        <token tid="12" begin="65" end="72" type="0" POS="NN" lemma="election">election</token>
+        <token tid="13" begin="73" end="73" type="6144" POS="." lemma="!">!</token>
+      </tokens>
+    </sent>
+    <sent sid="1" begin="14" end="42">
+      <text>#TCOT #2A https://t.co/X4JuVwGQzT #CruzCrew #PJNETRT @astroehlein: Fico's xenophobic rhetoric didn't help him: He lost his majority &amp; extreme right will enter Slovak parliament https://t.co?</text>
+      <parse score="-24.7317">[FRAG [NP [NP #TCOT_NN #2A_NN https://t.co/X4JuVwGQzT_NN #CruzCrew_NN #PJNETRT_NNP @astroehlein_NN NP] :_: [S [S [S [NP [NP Fico_NNP 's_POS NP] xenophobic_JJ rhetoric_NN NP] [VP did_VBD n't_RB [VP help_VB [NP him_PRP NP] VP] VP] S] S] :_: [S [NP He_PRP NP] [VP lost_VBD [NP his_PRP$ majority_NN NP] VP] S] &amp;_CC [S [NP extreme_JJ right_NN NP] [VP will_MD [VP enter_VB [NP Slovak_NNP parliament_NN https://t.co_NN NP] VP] VP] S] S] NP] ?_. FRAG]</parse>
+      <dependency_parse>#TCOT NN 5 -I #2A NN 5 -I https://t.co/X4JuVwGQzT NN 5 -I #CruzCrew NN 5 -I #PJNETRT NNP 5 -I @astroehlein NN -1 NP : : 5 -E Fico NNP 10 NP 's POS 7 -I xenophobic JJ 10 -I rhetoric NN 13 NP did VBD 13 -E n't RB 13 -E help VB 24 VP him PRP 13 NP : : 24 -E He PRP 17 NP lost VBD 24 VP his PRP$ 19 -I majority NN 17 NP &amp; CC 24 -E extreme JJ 22 -I right NN 24 NP will MD 24 -E enter VB 5 VP Slovak NNP 27 -I parliament NN 27 -I https://t.co NN 24 NP ? . 5 -E </dependency_parse>
+      <usd_dependency_parse>#TCOT NN 5 compound #2A NN 5 compound https://t.co/X4JuVwGQzT NN 5 compound #CruzCrew NN 5 compound #PJNETRT NNP 5 name @astroehlein NN -1 root : : 5 punct Fico NNP 10 poss 's POS 7 case xenophobic JJ 10 amod rhetoric NN 13 nsubj did VBD 13 aux n't RB 13 neg help VB 24 nfincl him PRP 13 dobj : : 24 punct He PRP 17 nsubj lost VBD 24 ccomp his PRP$ 19 poss majority NN 17 dobj &amp; CC 24 cc extreme JJ 22 amod right NN 24 nsubj will MD 24 aux enter VB 5 nfincl Slovak NNP 27 name parliament NN 27 compound https://t.co NN 24 dobj ? . 5 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="14" begin="75" end="79" type="0" POS="NN" lemma="#tcot">#TCOT</token>
+        <token tid="15" begin="81" end="83" type="0" POS="NN" lemma="#2a">#2A</token>
+        <token tid="16" begin="85" end="107" type="0" POS="NN" lemma="https://t.co/x4juvwgqzt">https://t.co/X4JuVwGQzT</token>
+        <token tid="17" begin="109" end="117" type="0" POS="NN" lemma="#cruzcrew">#CruzCrew</token>
+        <token tid="18" begin="119" end="126" type="0" POS="NNP" lemma="#pjnetrt">#PJNETRT</token>
+        <token tid="19" begin="128" end="139" type="0" POS="NN" lemma="@astroehlein">@astroehlein</token>
+        <token tid="20" begin="140" end="140" type="2048" POS=":" lemma=":">:</token>
+        <token tid="21" begin="142" end="145" type="0" POS="NNP" lemma="fico">Fico</token>
+        <token tid="22" begin="146" end="147" type="0" POS="POS" lemma="'s">'s</token>
+        <token tid="23" begin="149" end="158" type="0" POS="JJ" lemma="xenophobic">xenophobic</token>
+        <token tid="24" begin="160" end="167" type="0" POS="NN" lemma="rhetoric">rhetoric</token>
+        <token tid="25" begin="169" end="171" type="0" POS="VBD" lemma="do">did</token>
+        <token tid="26" begin="172" end="174" type="0" POS="RB" lemma="n't">n't</token>
+        <token tid="27" begin="176" end="179" type="0" POS="VB" lemma="help">help</token>
+        <token tid="28" begin="181" end="183" type="0" POS="PRP" lemma="him">him</token>
+        <token tid="29" begin="184" end="184" type="2048" POS=":" lemma=":">:</token>
+        <token tid="30" begin="186" end="187" type="0" POS="PRP" lemma="he">He</token>
+        <token tid="31" begin="189" end="192" type="0" POS="VBD" lemma="lose">lost</token>
+        <token tid="32" begin="194" end="196" type="0" POS="PRP$" lemma="his">his</token>
+        <token tid="33" begin="198" end="205" type="0" POS="NN" lemma="majority">majority</token>
+        <token tid="34" begin="207" end="207" type="2048" POS="CC" lemma="&amp;">&amp;</token>
+        <token tid="35" begin="209" end="215" type="0" POS="JJ" lemma="extreme">extreme</token>
+        <token tid="36" begin="217" end="221" type="0" POS="NN" lemma="right">right</token>
+        <token tid="37" begin="223" end="226" type="0" POS="MD" lemma="will">will</token>
+        <token tid="38" begin="228" end="232" type="0" POS="VB" lemma="enter">enter</token>
+        <token tid="39" begin="234" end="239" type="0" POS="NNP" lemma="slovak">Slovak</token>
+        <token tid="40" begin="241" end="250" type="0" POS="NN" lemma="parliament">parliament</token>
+        <token tid="41" begin="252" end="263" type="0" POS="NN" lemma="https://t.co">https://t.co</token>
+        <token tid="42" begin="264" end="264" type="6144" POS="." lemma="?">?</token>
+      </tokens>
+    </sent>
+    <sent sid="2" begin="43" end="81">
+      <text>@MrAyeDee him saying e can afford his kids school fees jst reminded me dt Buhari is a complete liar, during d election e claimed to be poorExactly one of these actually matters to me in this election.</text>
+      <parse score="-37.2729">[S [VP @MrAyeDee_VB [S [NP him_PRP NP] [VP saying_VBG [SBAR [S [NP e_NN NP] [VP can_MD [VP afford_VB [NP his_PRP$ kids_NNS school_NN fees_NNS jst_NN NP] [VP reminded_VBD [NP me_PRP NP] [SBAR [S [NP dt_NNP Buhari_NNP NP] [VP is_VBZ [NP a_DT complete_JJ liar_NN NP] ,_, [PP during_IN [NP [NML d_NN election_NN NML] e_NN NP] PP] [VP claimed_VBD [S [VP to_TO [VP be_VB [NP [NP [QP poorExactly_RB one_CD QP] NP] [PP of_IN [NP these_DT NP] PP] NP] [ADVP actually_RB ADVP] VP] VP] S] VP] [VP matters_VBZ [PP to_TO [NP me_PRP NP] PP] [PP in_IN [NP this_DT election_NN NP] PP] VP] VP] S] SBAR] VP] VP] VP] S] SBAR] VP] S] VP] ._. S]</parse>
+      <dependency_parse>@MrAyeDee VB -1 VP him PRP 2 NP saying VBG 0 VP e NN 11 NP can MD 11 -E afford VB 11 -E his PRP$ 10 -I kids NNS 10 -I school NN 10 -I fees NNS 10 -I jst NN 11 NP reminded VBD 2 VP me PRP 11 NP dt NNP 14 -I Buhari NNP 32 NP is VBZ 32 -E a DT 18 -I complete JJ 18 -I liar NN 32 NP , , 32 -E during IN 32 PP d NN 22 -I election NN 23 NML e NN 20 NP claimed VBD 32 VP to TO 26 -E be VB 24 VP poorExactly RB 28 -I one CD 26 QP of IN 28 PP these DT 29 NP actually RB 26 ADVP matters VBZ 11 VP to TO 32 PP me PRP 33 NP in IN 32 PP this DT 37 -I election NN 35 NP . . 0 -E </dependency_parse>
+      <usd_dependency_parse>@MrAyeDee VB -1 root him PRP 2 nsubj saying VBG 0 xcomp e NN 11 nsubj can MD 11 aux afford VB 11 aux his PRP$ 10 poss kids NNS 10 compound school NN 10 compound fees NNS 10 compound jst NN 11 nsubj reminded VBD 2 ccomp me PRP 11 dobj dt NNP 14 name Buhari NNP 32 nsubj is VBZ 32 aux a DT 18 det complete JJ 18 amod liar NN 32 nsubj , , 32 punct during IN 23 case d NN 22 compound election NN 23 compound e NN 32 nmod claimed VBD 32 ccomp to TO 31 mark be VB 31 nfincl poorExactly RB 28 advmod one CD 31 nummod of IN 30 case these DT 28 nmod actually RB 24 advmod matters VBZ 11 ccomp to TO 34 case me PRP 32 nmod in IN 37 case this DT 37 det election NN 32 nmod . . 0 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="43" begin="265" end="273" type="0" POS="VB" lemma="@mrayedee">@MrAyeDee</token>
+        <token tid="44" begin="275" end="277" type="0" POS="PRP" lemma="him">him</token>
+        <token tid="45" begin="279" end="284" type="0" POS="VBG" lemma="say">saying</token>
+        <token tid="46" begin="286" end="286" type="0" POS="NN" lemma="e">e</token>
+        <token tid="47" begin="288" end="290" type="0" POS="MD" lemma="can">can</token>
+        <token tid="48" begin="292" end="297" type="0" POS="VB" lemma="afford">afford</token>
+        <token tid="49" begin="299" end="301" type="0" POS="PRP$" lemma="his">his</token>
+        <token tid="50" begin="303" end="306" type="0" POS="NNS" lemma="kid">kids</token>
+        <token tid="51" begin="308" end="313" type="0" POS="NN" lemma="school">school</token>
+        <token tid="52" begin="315" end="318" type="0" POS="NNS" lemma="fee">fees</token>
+        <token tid="53" begin="320" end="322" type="0" POS="NN" lemma="jst">jst</token>
+        <token tid="54" begin="324" end="331" type="0" POS="VBD" lemma="remind">reminded</token>
+        <token tid="55" begin="333" end="334" type="0" POS="PRP" lemma="me">me</token>
+        <token tid="56" begin="336" end="337" type="0" POS="NNP" lemma="dt">dt</token>
+        <token tid="57" begin="339" end="344" type="0" POS="NNP" lemma="buhari">Buhari</token>
+        <token tid="58" begin="346" end="347" type="0" POS="VBZ" lemma="be">is</token>
+        <token tid="59" begin="349" end="349" type="0" POS="DT" lemma="a">a</token>
+        <token tid="60" begin="351" end="358" type="0" POS="JJ" lemma="complete">complete</token>
+        <token tid="61" begin="360" end="363" type="0" POS="NN" lemma="liar">liar</token>
+        <token tid="62" begin="364" end="364" type="2048" POS="," lemma=",">,</token>
+        <token tid="63" begin="366" end="371" type="0" POS="IN" lemma="during">during</token>
+        <token tid="64" begin="373" end="373" type="0" POS="NN" lemma="d">d</token>
+        <token tid="65" begin="375" end="382" type="0" POS="NN" lemma="election">election</token>
+        <token tid="66" begin="384" end="384" type="0" POS="NN" lemma="e">e</token>
+        <token tid="67" begin="386" end="392" type="0" POS="VBD" lemma="claim">claimed</token>
+        <token tid="68" begin="394" end="395" type="0" POS="TO" lemma="to">to</token>
+        <token tid="69" begin="397" end="398" type="0" POS="VB" lemma="be">be</token>
+        <token tid="70" begin="400" end="410" type="0" POS="RB" lemma="poorexactly">poorExactly</token>
+        <token tid="71" begin="412" end="414" type="0" POS="CD" lemma="one">one</token>
+        <token tid="72" begin="416" end="417" type="0" POS="IN" lemma="of">of</token>
+        <token tid="73" begin="419" end="423" type="0" POS="DT" lemma="these">these</token>
+        <token tid="74" begin="425" end="432" type="0" POS="RB" lemma="actually">actually</token>
+        <token tid="75" begin="434" end="440" type="0" POS="VBZ" lemma="matter">matters</token>
+        <token tid="76" begin="442" end="443" type="0" POS="TO" lemma="to">to</token>
+        <token tid="77" begin="445" end="446" type="0" POS="PRP" lemma="me">me</token>
+        <token tid="78" begin="448" end="449" type="0" POS="IN" lemma="in">in</token>
+        <token tid="79" begin="451" end="454" type="0" POS="DT" lemma="this">this</token>
+        <token tid="80" begin="456" end="463" type="0" POS="NN" lemma="election">election</token>
+        <token tid="81" begin="464" end="464" type="6144" POS="." lemma=".">.</token>
+      </tokens>
+    </sent>
+    <sent sid="3" begin="82" end="99">
+      <text>( https://t.co/LiyHhc1Say ; https://t.co/0SNpDxGUxJ ) https://t.co/fsiiGS8zKZ@KiryowaKk We are answering every claim in the petition filed by @AmamaMbabazi.</text>
+      <parse score="-12.8228">[FRAG (_-LRB- [NP https://t.co/LiyHhc1Say_ADD NP] ;_: [NP https://t.co/0SNpDxGUxJ_ADD )_-RRB- https://t.co/fsiiGS8zKZ@KiryowaKk_ADD NP] [S [NP We_PRP NP] [VP are_VBP [VP answering_VBG [NP [NP every_DT claim_NN NP] [PP in_IN [NP [NP the_DT petition_NN NP] [VP filed_VBN [PP by_IN [NP @AmamaMbabazi_NNP NP] PP] VP] NP] PP] NP] VP] VP] S] ._. FRAG]</parse>
+      <dependency_parse>( -LRB- 8 -E https://t.co/LiyHhc1Say ADD 8 NP ; : 8 -E https://t.co/0SNpDxGUxJ ADD 5 -I ) -RRB- 5 -I https://t.co/fsiiGS8zKZ@KiryowaKk ADD 8 NP We PRP 8 NP are VBP 8 -E answering VBG -1 VP every DT 10 -I claim NN 8 NP in IN 10 PP the DT 13 -I petition NN 11 NP filed VBN 13 VP by IN 14 PP @AmamaMbabazi NNP 15 NP . . 8 -E </dependency_parse>
+      <usd_dependency_parse>( -LRB- 8 punct https://t.co/LiyHhc1Say ADD 8 nsubj ; : 8 punct https://t.co/0SNpDxGUxJ ADD 5 nsubj ) -RRB- 5 punct https://t.co/fsiiGS8zKZ@KiryowaKk ADD 8 nsubj We PRP 8 nsubj are VBP 8 aux answering VBG -1 root every DT 10 det claim NN 8 dobj in IN 13 case the DT 13 det petition NN 10 nmod filed VBN 13 nfincl by IN 16 case @AmamaMbabazi NNP 14 nmod . . 8 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="82" begin="466" end="466" type="2048" POS="-LRB-" lemma="(">(</token>
+        <token tid="83" begin="468" end="490" type="0" POS="ADD" lemma="https://t.co/liyhhc1say">https://t.co/LiyHhc1Say</token>
+        <token tid="84" begin="492" end="492" type="2048" POS=":" lemma=";">;</token>
+        <token tid="85" begin="494" end="516" type="0" POS="ADD" lemma="https://t.co/0snpdxguxj">https://t.co/0SNpDxGUxJ</token>
+        <token tid="86" begin="518" end="518" type="2048" POS="-RRB-" lemma=")">)</token>
+        <token tid="87" begin="520" end="552" type="0" POS="ADD" lemma="https://t.co/fsiigs8zkz@kiryowakk">https://t.co/fsiiGS8zKZ@KiryowaKk</token>
+        <token tid="88" begin="554" end="555" type="0" POS="PRP" lemma="we">We</token>
+        <token tid="89" begin="557" end="559" type="0" POS="VBP" lemma="be">are</token>
+        <token tid="90" begin="561" end="569" type="0" POS="VBG" lemma="answer">answering</token>
+        <token tid="91" begin="571" end="575" type="0" POS="DT" lemma="every">every</token>
+        <token tid="92" begin="577" end="581" type="0" POS="NN" lemma="claim">claim</token>
+        <token tid="93" begin="583" end="584" type="0" POS="IN" lemma="in">in</token>
+        <token tid="94" begin="586" end="588" type="0" POS="DT" lemma="the">the</token>
+        <token tid="95" begin="590" end="597" type="0" POS="NN" lemma="petition">petition</token>
+        <token tid="96" begin="599" end="603" type="0" POS="VBN" lemma="file">filed</token>
+        <token tid="97" begin="605" end="606" type="0" POS="IN" lemma="by">by</token>
+        <token tid="98" begin="608" end="620" type="0" POS="NNP" lemma="@amamambabazi">@AmamaMbabazi</token>
+        <token tid="99" begin="621" end="621" type="6144" POS="." lemma=".">.</token>
+      </tokens>
+    </sent>
+    <sent sid="4" begin="100" end="125">
+      <text>As far as we are concerned, the election was fair @ugandarnCruz, have you even looked at the swing states for the gen election?</text>
+      <parse score="-12.6047">[S [ADVP [ADVP As_RB far_RB ADVP] [SBAR as_IN [S [NP we_PRP NP] [VP are_VBP [VP concerned_VBN VP] VP] S] SBAR] ADVP] ,_, [NP the_DT election_NN NP] [VP was_VBD [NP fair_JJ @ugandarnCruz_NN NP] VP] ,_, [VP have_VBP [NP you_PRP NP] [ADVP even_RB ADVP] [VP looked_VBD [PP at_IN [NP [NP the_DT swing_NN states_NNS NP] [PP for_IN [NP the_DT gen_JJ election_NN NP] PP] NP] PP] VP] VP] ?_. S]</parse>
+      <dependency_parse>As RB 1 -I far RB 16 ADVP as IN 5 -E we PRP 5 NP are VBP 5 -E concerned VBN 1 VP , , 16 -E the DT 8 -I election NN 16 NP was VBD 16 VP fair JJ 11 -I @ugandarnCruz NN 9 NP , , 16 -E have VBP 16 -E you PRP 16 NP even RB 16 ADVP looked VBD -1 VP at IN 16 PP the DT 20 -I swing NN 20 -I states NNS 17 NP for IN 20 PP the DT 24 -I gen JJ 24 -I election NN 21 NP ? . 16 -E </dependency_parse>
+      <usd_dependency_parse>As RB 1 advmod far RB 16 advmod as IN 5 mark we PRP 5 nsubjpass are VBP 5 auxpass concerned VBN 1 advcl , , 16 punct the DT 8 det election NN 16 nsubj was VBD 11 cop fair JJ 11 amod @ugandarnCruz NN 16 nsubj , , 16 punct have VBP 16 aux you PRP 16 nsubj even RB 16 advmod looked VBD -1 root at IN 20 case the DT 20 det swing NN 20 compound states NNS 16 nmod for IN 24 case the DT 24 det gen JJ 24 amod election NN 20 nmod ? . 16 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="100" begin="623" end="624" type="0" POS="RB" lemma="as">As</token>
+        <token tid="101" begin="626" end="628" type="0" POS="RB" lemma="far">far</token>
+        <token tid="102" begin="630" end="631" type="0" POS="IN" lemma="as">as</token>
+        <token tid="103" begin="633" end="634" type="0" POS="PRP" lemma="we">we</token>
+        <token tid="104" begin="636" end="638" type="0" POS="VBP" lemma="be">are</token>
+        <token tid="105" begin="640" end="648" type="0" POS="VBN" lemma="concern">concerned</token>
+        <token tid="106" begin="649" end="649" type="2048" POS="," lemma=",">,</token>
+        <token tid="107" begin="651" end="653" type="0" POS="DT" lemma="the">the</token>
+        <token tid="108" begin="655" end="662" type="0" POS="NN" lemma="election">election</token>
+        <token tid="109" begin="664" end="666" type="0" POS="VBD" lemma="be">was</token>
+        <token tid="110" begin="668" end="671" type="0" POS="JJ" lemma="fair">fair</token>
+        <token tid="111" begin="673" end="685" type="0" POS="NN" lemma="@ugandarncruz">@ugandarnCruz</token>
+        <token tid="112" begin="686" end="686" type="2048" POS="," lemma=",">,</token>
+        <token tid="113" begin="688" end="691" type="0" POS="VBP" lemma="have">have</token>
+        <token tid="114" begin="693" end="695" type="0" POS="PRP" lemma="you">you</token>
+        <token tid="115" begin="697" end="700" type="0" POS="RB" lemma="even">even</token>
+        <token tid="116" begin="702" end="707" type="0" POS="VBD" lemma="look">looked</token>
+        <token tid="117" begin="709" end="710" type="0" POS="IN" lemma="at">at</token>
+        <token tid="118" begin="712" end="714" type="0" POS="DT" lemma="the">the</token>
+        <token tid="119" begin="716" end="720" type="0" POS="NN" lemma="swing">swing</token>
+        <token tid="120" begin="722" end="727" type="0" POS="NNS" lemma="state">states</token>
+        <token tid="121" begin="729" end="731" type="0" POS="IN" lemma="for">for</token>
+        <token tid="122" begin="733" end="735" type="0" POS="DT" lemma="the">the</token>
+        <token tid="123" begin="737" end="739" type="0" POS="JJ" lemma="gen">gen</token>
+        <token tid="124" begin="741" end="748" type="0" POS="NN" lemma="election">election</token>
+        <token tid="125" begin="749" end="749" type="6144" POS="." lemma="?">?</token>
+      </tokens>
+    </sent>
+    <sent sid="5" begin="126" end="130">
+      <text>You have no chance!</text>
+      <parse score="-0.599387">[S [NP You_PRP NP] [VP have_VBP [NP no_DT chance_NN NP] VP] !_. S]</parse>
+      <dependency_parse>You PRP 1 NP have VBP -1 VP no DT 3 -I chance NN 1 NP ! . 1 -E </dependency_parse>
+      <usd_dependency_parse>You PRP 1 nsubj have VBP -1 root no DT 3 neg chance NN 1 dobj ! . 1 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="126" begin="751" end="753" type="0" POS="PRP" lemma="you">You</token>
+        <token tid="127" begin="755" end="758" type="0" POS="VBP" lemma="have">have</token>
+        <token tid="128" begin="760" end="761" type="0" POS="DT" lemma="no">no</token>
+        <token tid="129" begin="763" end="768" type="0" POS="NN" lemma="chance">chance</token>
+        <token tid="130" begin="769" end="769" type="6144" POS="." lemma="!">!</token>
+      </tokens>
+    </sent>
+    <sent sid="6" begin="131" end="159">
+      <text>Drop out now so we can can beat Hillary.RT @AshakaSaleh: Former NSA Sambo Dasuki &amp; his friends praying to God for Jonathan to WIN the 2015 election .</text>
+      <parse score="-27.4193">[S [VP Drop_VB [PRT out_RP PRT] [ADVP now_RB ADVP] [SBAR so_IN [S [NP we_PRP NP] [VP can_MD VP] S] SBAR] VP] [VP can_MD [VP beat_VB [NP [NP Hillary.RT_NNP @AshakaSaleh_NNP NP] :_: [NP [NP [NP Former_JJ NSA_NNP Sambo_NNP Dasuki_NNP NP] &amp;_CC [NP his_PRP$ friends_NNS NP] NP] [VP praying_VBG [PP to_TO [NP God_NNP NP] PP] [SBAR for_IN [S [NP Jonathan_NNP NP] [VP to_TO [VP WIN_VB [NP the_DT 2015_CD election_NN NP] VP] VP] S] SBAR] VP] NP] NP] VP] VP] ._. S]</parse>
+      <dependency_parse>Drop VB 7 VP out RP 0 PRT now RB 0 ADVP so IN 5 -E we PRP 5 NP can MD 0 VP can MD 7 -E beat VB -1 VP Hillary.RT NNP 9 -I @AshakaSaleh NNP 17 NP : : 17 -E Former JJ 14 -I NSA NNP 14 -I Sambo NNP 14 -I Dasuki NNP 17 NP &amp; CC 17 -E his PRP$ 17 -I friends NNS 7 NP praying VBG 17 VP to TO 18 PP God NNP 19 NP for IN 24 -E Jonathan NNP 24 NP to TO 24 -E WIN VB 18 VP the DT 27 -I 2015 CD 27 -I election NN 24 NP . . 7 -E </dependency_parse>
+      <usd_dependency_parse>Drop VB 7 nfincl out RP 0 prt now RB 0 advmod so IN 5 mark we PRP 5 npmod can MD 0 aux can MD 7 aux beat VB -1 root Hillary.RT NNP 9 name @AshakaSaleh NNP 17 npmod : : 17 punct Former JJ 14 amod NSA NNP 14 name Sambo NNP 14 name Dasuki NNP 17 npmod &amp; CC 17 cc his PRP$ 17 poss friends NNS 7 dobj praying VBG 17 nfincl to TO 20 case God NNP 18 nmod for IN 24 mark Jonathan NNP 24 nsubj to TO 24 mark WIN VB 18 nfincl the DT 27 det 2015 CD 27 nummod election NN 24 dobj . . 7 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="131" begin="771" end="774" type="0" POS="VB" lemma="drop">Drop</token>
+        <token tid="132" begin="776" end="778" type="0" POS="RP" lemma="out">out</token>
+        <token tid="133" begin="780" end="782" type="0" POS="RB" lemma="now">now</token>
+        <token tid="134" begin="784" end="785" type="0" POS="IN" lemma="so">so</token>
+        <token tid="135" begin="787" end="788" type="0" POS="PRP" lemma="we">we</token>
+        <token tid="136" begin="790" end="792" type="0" POS="MD" lemma="can">can</token>
+        <token tid="137" begin="794" end="796" type="0" POS="MD" lemma="can">can</token>
+        <token tid="138" begin="798" end="801" type="0" POS="VB" lemma="beat">beat</token>
+        <token tid="139" begin="803" end="812" type="0" POS="NNP" lemma="hillary.rt">Hillary.RT</token>
+        <token tid="140" begin="814" end="825" type="0" POS="NNP" lemma="@ashakasaleh">@AshakaSaleh</token>
+        <token tid="141" begin="826" end="826" type="2048" POS=":" lemma=":">:</token>
+        <token tid="142" begin="828" end="833" type="0" POS="JJ" lemma="former">Former</token>
+        <token tid="143" begin="835" end="837" type="0" POS="NNP" lemma="nsa">NSA</token>
+        <token tid="144" begin="839" end="843" type="0" POS="NNP" lemma="sambo">Sambo</token>
+        <token tid="145" begin="845" end="850" type="0" POS="NNP" lemma="dasuki">Dasuki</token>
+        <token tid="146" begin="852" end="852" type="2048" POS="CC" lemma="&amp;">&amp;</token>
+        <token tid="147" begin="854" end="856" type="0" POS="PRP$" lemma="his">his</token>
+        <token tid="148" begin="858" end="864" type="0" POS="NNS" lemma="friend">friends</token>
+        <token tid="149" begin="866" end="872" type="0" POS="VBG" lemma="pray">praying</token>
+        <token tid="150" begin="874" end="875" type="0" POS="TO" lemma="to">to</token>
+        <token tid="151" begin="877" end="879" type="0" POS="NNP" lemma="god">God</token>
+        <token tid="152" begin="881" end="883" type="0" POS="IN" lemma="for">for</token>
+        <token tid="153" begin="885" end="892" type="0" POS="NNP" lemma="jonathan">Jonathan</token>
+        <token tid="154" begin="894" end="895" type="0" POS="TO" lemma="to">to</token>
+        <token tid="155" begin="897" end="899" type="0" POS="VB" lemma="win">WIN</token>
+        <token tid="156" begin="901" end="903" type="0" POS="DT" lemma="the">the</token>
+        <token tid="157" begin="905" end="908" type="0" POS="CD" lemma="2015">2015</token>
+        <token tid="158" begin="910" end="917" type="0" POS="NN" lemma="election">election</token>
+        <token tid="159" begin="919" end="919" type="6144" POS="." lemma=".">.</token>
+      </tokens>
+    </sent>
+    <sent sid="7" begin="160" end="162">
+      <text>#throwback3015elections https?</text>
+      <parse score="-3.41199">[FRAG [PP #throwback3015elections_IN [NP https_NNP NP] PP] ?_. FRAG]</parse>
+      <dependency_parse>#throwback3015elections IN -1 PP https NNP 0 NP ? . 0 -E </dependency_parse>
+      <usd_dependency_parse>#throwback3015elections IN -1 root https NNP 0 dobj ? . 0 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="160" begin="921" end="943" type="0" POS="IN" lemma="#throwback3015elections">#throwback3015elections</token>
+        <token tid="161" begin="945" end="949" type="0" POS="NNP" lemma="http">https</token>
+        <token tid="162" begin="950" end="950" type="6144" POS="." lemma="?">?</token>
+      </tokens>
+    </sent>
+    <sent sid="8" begin="163" end="186">
+      <text>Big kudos to election workers - Corpus Christi Caller https://t.co/lZIu1cxuWhAfter #GE16, where next for Ireland, an tOireachtas and the diaspora abroad?</text>
+      <parse score="-21.43">[FRAG [NP [NP [NP Big_JJ kudos_NNS NP] [PP to_TO [NP election_NN workers_NNS NP] PP] NP] -_: [NP [NP Corpus_NNP Christi_NNP Caller_NN https://t.co/lZIu1cxuWhAfter_NN #GE16_NN NP] ,_, [SBAR [WHADVP where_WRB WHADVP] [S [NP [NP next_NN NP] [PP for_IN [NP [NP Ireland_NNP NP] ,_, [NP an_DT tOireachtas_NN NP] and_CC [NP [NP the_DT diaspora_NN NP] [ADVP abroad_RB ADVP] NP] NP] PP] NP] S] SBAR] NP] NP] ?_. FRAG]</parse>
+      <dependency_parse>Big JJ 1 -I kudos NNS 10 NP to TO 1 PP election NN 4 -I workers NNS 2 NP - : 10 -E Corpus NNP 10 -I Christi NNP 10 -I Caller NN 10 -I https://t.co/lZIu1cxuWhAfter NN 10 -I #GE16 NN -1 NP , , 10 -E where WRB 13 WHADVP next NN 10 NP for IN 13 PP Ireland NNP 21 NP , , 21 -E an DT 18 -I tOireachtas NN 21 NP and CC 21 -E the DT 21 -I diaspora NN 14 NP abroad RB 21 ADVP ? . 10 -E </dependency_parse>
+      <usd_dependency_parse>Big JJ 1 amod kudos NNS 10 nsubj to TO 4 case election NN 4 compound workers NNS 1 nmod - : 10 punct Corpus NNP 10 name Christi NNP 10 name Caller NN 10 compound https://t.co/lZIu1cxuWhAfter NN 10 compound #GE16 NN -1 root , , 10 punct where WRB 13 advmod next NN 10 conj for IN 21 case Ireland NNP 21 nmod , , 21 punct an DT 18 det tOireachtas NN 21 nmod and CC 21 cc the DT 21 det diaspora NN 13 nmod abroad RB 21 advmod ? . 10 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="163" begin="951" end="953" type="0" POS="JJ" lemma="big">Big</token>
+        <token tid="164" begin="955" end="959" type="0" POS="NNS" lemma="kudos">kudos</token>
+        <token tid="165" begin="961" end="962" type="0" POS="TO" lemma="to">to</token>
+        <token tid="166" begin="964" end="971" type="0" POS="NN" lemma="election">election</token>
+        <token tid="167" begin="973" end="979" type="0" POS="NNS" lemma="worker">workers</token>
+        <token tid="168" begin="981" end="981" type="2048" POS=":" lemma="-">-</token>
+        <token tid="169" begin="983" end="988" type="0" POS="NNP" lemma="corpus">Corpus</token>
+        <token tid="170" begin="990" end="996" type="0" POS="NNP" lemma="christi">Christi</token>
+        <token tid="171" begin="998" end="1003" type="0" POS="NN" lemma="caller">Caller</token>
+        <token tid="172" begin="1005" end="1032" type="0" POS="NN" lemma="https://t.co/lziu1cxuwhafter">https://t.co/lZIu1cxuWhAfter</token>
+        <token tid="173" begin="1034" end="1038" type="0" POS="NN" lemma="#ge16">#GE16</token>
+        <token tid="174" begin="1039" end="1039" type="2048" POS="," lemma=",">,</token>
+        <token tid="175" begin="1041" end="1045" type="0" POS="WRB" lemma="where">where</token>
+        <token tid="176" begin="1047" end="1050" type="0" POS="NN" lemma="next">next</token>
+        <token tid="177" begin="1052" end="1054" type="0" POS="IN" lemma="for">for</token>
+        <token tid="178" begin="1056" end="1062" type="0" POS="NNP" lemma="ireland">Ireland</token>
+        <token tid="179" begin="1063" end="1063" type="2048" POS="," lemma=",">,</token>
+        <token tid="180" begin="1065" end="1066" type="0" POS="DT" lemma="an">an</token>
+        <token tid="181" begin="1068" end="1078" type="0" POS="NN" lemma="toireachtas">tOireachtas</token>
+        <token tid="182" begin="1080" end="1082" type="0" POS="CC" lemma="and">and</token>
+        <token tid="183" begin="1084" end="1086" type="0" POS="DT" lemma="the">the</token>
+        <token tid="184" begin="1088" end="1095" type="0" POS="NN" lemma="diaspora">diaspora</token>
+        <token tid="185" begin="1097" end="1102" type="0" POS="RB" lemma="abroad">abroad</token>
+        <token tid="186" begin="1103" end="1103" type="6144" POS="." lemma="?">?</token>
+      </tokens>
+    </sent>
+    <sent sid="9" begin="187" end="192">
+      <text>My thoughts since the election.</text>
+      <parse score="-1.59925">[NP [NP My_PRP$ thoughts_NNS NP] [PP since_IN [NP the_DT election_NN NP] PP] ._. NP]</parse>
+      <dependency_parse>My PRP$ 1 -I thoughts NNS -1 NP since IN 1 PP the DT 4 -I election NN 2 NP . . 1 -E </dependency_parse>
+      <usd_dependency_parse>My PRP$ 1 poss thoughts NNS -1 root since IN 4 case the DT 4 det election NN 1 nmod . . 1 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="187" begin="1105" end="1106" type="0" POS="PRP$" lemma="my">My</token>
+        <token tid="188" begin="1108" end="1115" type="0" POS="NNS" lemma="thought">thoughts</token>
+        <token tid="189" begin="1117" end="1121" type="0" POS="IN" lemma="since">since</token>
+        <token tid="190" begin="1123" end="1125" type="0" POS="DT" lemma="the">the</token>
+        <token tid="191" begin="1127" end="1134" type="0" POS="NN" lemma="election">election</token>
+        <token tid="192" begin="1135" end="1135" type="6144" POS="." lemma=".">.</token>
+      </tokens>
+    </sent>
+    <sent sid="10" begin="193" end="196">
+      <text>https://t.co/zzToz69AX1@MRVChennai mr.</text>
+      <parse score="-4.48558">[S [NP https://t.co/zzToz69AX1_ADD @MRVChennai_NNP mr_NN ._. NP] S]</parse>
+      <dependency_parse>https://t.co/zzToz69AX1 ADD 2 -I @MRVChennai NNP 2 -I mr NN -1 NP . . 2 -I </dependency_parse>
+      <usd_dependency_parse>https://t.co/zzToz69AX1 ADD 2 dep @MRVChennai NNP 2 name mr NN -1 root . . 2 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="193" begin="1138" end="1160" type="0" POS="ADD" lemma="https://t.co/zztoz69ax1">https://t.co/zzToz69AX1</token>
+        <token tid="194" begin="1161" end="1171" type="0" POS="NNP" lemma="@mrvchennai">@MRVChennai</token>
+        <token tid="195" begin="1173" end="1174" type="0" POS="NN" lemma="mr">mr</token>
+        <token tid="196" begin="1175" end="1175" type="6144" POS="." lemma=".">.</token>
+      </tokens>
+    </sent>
+    <sent sid="11" begin="197" end="244">
+      <text>Kk the next pm candidate for 2019 election for Congress will b able to guide us thru poverty, capitalism,  corruptionRT @AtusiubaOkwy: @inecnigeria If u don't cancel Bende LGA election in #AbiaNorthRerun, it means that Nigerians has to be prepared cos we a?</text>
+      <parse score="-51.3308">[S [S [S [VP Kk_VB [NP [NP the_DT next_JJ pm_NN candidate_NN NP] [PP for_IN [NP [NP 2019_CD election_NN NP] [PP for_IN [NP Congress_NNP NP] PP] NP] PP] NP] VP] S] [VP will_MD [NP [NP [NP [NP b_NN NP] [ADJP able_JJ [S [VP to_TO [VP guide_VB [NP us_PRP NP] [PP thru_IN [NP poverty_NN NP] PP] VP] VP] S] ADJP] ,_, [NP capitalism_NN NP] NP] ,_, [NP corruptionRT_JJ @AtusiubaOkwy_NN NP] NP] :_: [NP [NP @inecnigeria_NNS NP] [PP If_IN [S [NP u_PRP NP] [VP do_VBP n't_RB [VP cancel_VB [NP [NP Bende_NNP LGA_NNP election_NN NP] [PP in_IN [NP #AbiaNorthRerun_NNP NP] PP] NP] VP] VP] S] PP] NP] NP] VP] S] ,_, [NP it_PRP NP] [VP means_VBZ [SBAR that_IN [S [NP Nigerians_NNPS NP] [VP has_VBZ [S [VP to_TO [VP be_VB [ADJP prepared_JJ [PP cos_IN [NP [NP we_PRP NP] [NP a_DT NP] NP] PP] ADJP] VP] VP] S] VP] S] SBAR] VP] ?_? S]</parse>
+      <dependency_parse>Kk VB 24 VP the DT 4 -I next JJ 4 -I pm NN 4 -I candidate NN 0 NP for IN 4 PP 2019 CD 7 -I election NN 5 NP for IN 7 PP Congress NNP 8 NP will MD 24 -E b NN 19 NP able JJ 19 ADJP to TO 14 -E guide VB 12 VP us PRP 14 NP thru IN 14 PP poverty NN 16 NP , , 19 -E capitalism NN 22 NP , , 22 -E corruptionRT JJ 22 -I @AtusiubaOkwy NN 24 NP : : 24 -E @inecnigeria NNS 37 NP If IN 24 PP u PRP 29 NP do VBP 29 -E n't RB 29 -E cancel VB 25 VP Bende NNP 32 -I LGA NNP 32 -I election NN 29 NP in IN 32 PP #AbiaNorthRerun NNP 33 NP , , 37 -E it PRP 37 NP means VBZ -1 VP that IN 40 -E Nigerians NNPS 40 NP has VBZ 37 VP to TO 42 -E be VB 40 VP prepared JJ 42 ADJP cos IN 43 PP we PRP 46 NP a DT 44 NP ? ? 37 -E </dependency_parse>
+      <usd_dependency_parse>Kk VB 24 nfincl the DT 4 det next JJ 4 amod pm NN 4 compound candidate NN 0 dobj for IN 7 case 2019 CD 7 nummod election NN 4 nmod for IN 9 case Congress NNP 7 nmod will MD 24 aux b NN 19 npmod able JJ 19 amod to TO 14 mark guide VB 12 xcomp us PRP 14 dobj thru IN 17 case poverty NN 14 nmod , , 19 punct capitalism NN 22 npmod , , 22 punct corruptionRT JJ 22 amod @AtusiubaOkwy NN 24 npmod : : 24 punct @inecnigeria NNS 37 nsubj If IN 24 case u PRP 29 nsubj do VBP 29 aux n't RB 29 neg cancel VB 25 nfincl Bende NNP 32 name LGA NNP 32 name election NN 29 dobj in IN 34 case #AbiaNorthRerun NNP 32 nmod , , 37 punct it PRP 37 nsubj means VBZ -1 root that IN 40 mark Nigerians NNPS 40 nsubj has VBZ 37 ccomp to TO 43 mark be VB 43 nfincl prepared JJ 40 xcomp cos IN 46 case we PRP 46 npmod a DT 43 nmod ? ? 37 punct</usd_dependency_parse>
+      <tokens>
+        <token tid="197" begin="1177" end="1178" type="0" POS="VB" lemma="kk">Kk</token>
+        <token tid="198" begin="1180" end="1182" type="0" POS="DT" lemma="the">the</token>
+        <token tid="199" begin="1184" end="1187" type="0" POS="JJ" lemma="next">next</token>
+        <token tid="200" begin="1189" end="1190" type="0" POS="NN" lemma="pm">pm</token>
+        <token tid="201" begin="1192" end="1200" type="0" POS="NN" lemma="candidate">candidate</token>
+        <token tid="202" begin="1202" end="1204" type="0" POS="IN" lemma="for">for</token>
+        <token tid="203" begin="1206" end="1209" type="0" POS="CD" lemma="2019">2019</token>
+        <token tid="204" begin="1211" end="1218" type="0" POS="NN" lemma="election">election</token>
+        <token tid="205" begin="1220" end="1222" type="0" POS="IN" lemma="for">for</token>
+        <token tid="206" begin="1224" end="1231" type="0" POS="NNP" lemma="congress">Congress</token>
+        <token tid="207" begin="1233" end="1236" type="0" POS="MD" lemma="will">will</token>
+        <token tid="208" begin="1238" end="1238" type="0" POS="NN" lemma="b">b</token>
+        <token tid="209" begin="1240" end="1243" type="0" POS="JJ" lemma="able">able</token>
+        <token tid="210" begin="1245" end="1246" type="0" POS="TO" lemma="to">to</token>
+        <token tid="211" begin="1248" end="1252" type="0" POS="VB" lemma="guide">guide</token>
+        <token tid="212" begin="1254" end="1255" type="0" POS="PRP" lemma="us">us</token>
+        <token tid="213" begin="1257" end="1260" type="0" POS="IN" lemma="thru">thru</token>
+        <token tid="214" begin="1262" end="1268" type="0" POS="NN" lemma="poverty">poverty</token>
+        <token tid="215" begin="1269" end="1269" type="2048" POS="," lemma=",">,</token>
+        <token tid="216" begin="1271" end="1280" type="0" POS="NN" lemma="capitalism">capitalism</token>
+        <token tid="217" begin="1281" end="1281" type="2048" POS="," lemma=",">,</token>
+        <token tid="218" begin="1284" end="1295" type="0" POS="JJ" lemma="corruptionrt">corruptionRT</token>
+        <token tid="219" begin="1297" end="1309" type="0" POS="NN" lemma="@atusiubaokwy">@AtusiubaOkwy</token>
+        <token tid="220" begin="1310" end="1310" type="2048" POS=":" lemma=":">:</token>
+        <token tid="221" begin="1312" end="1323" type="0" POS="NNS" lemma="@inecnigeria">@inecnigeria</token>
+        <token tid="222" begin="1325" end="1326" type="0" POS="IN" lemma="if">If</token>
+        <token tid="223" begin="1328" end="1328" type="0" POS="PRP" lemma="u">u</token>
+        <token tid="224" begin="1330" end="1331" type="0" POS="VBP" lemma="do">do</token>
+        <token tid="225" begin="1332" end="1334" type="0" POS="RB" lemma="n't">n't</token>
+        <token tid="226" begin="1336" end="1341" type="0" POS="VB" lemma="cancel">cancel</token>
+        <token tid="227" begin="1343" end="1347" type="0" POS="NNP" lemma="bende">Bende</token>
+        <token tid="228" begin="1349" end="1351" type="0" POS="NNP" lemma="lga">LGA</token>
+        <token tid="229" begin="1353" end="1360" type="0" POS="NN" lemma="election">election</token>
+        <token tid="230" begin="1362" end="1363" type="0" POS="IN" lemma="in">in</token>
+        <token tid="231" begin="1365" end="1379" type="0" POS="NNP" lemma="#abianorthrerun">#AbiaNorthRerun</token>
+        <token tid="232" begin="1380" end="1380" type="2048" POS="," lemma=",">,</token>
+        <token tid="233" begin="1382" end="1383" type="0" POS="PRP" lemma="it">it</token>
+        <token tid="234" begin="1385" end="1389" type="0" POS="VBZ" lemma="mean">means</token>
+        <token tid="235" begin="1391" end="1394" type="0" POS="IN" lemma="that">that</token>
+        <token tid="236" begin="1396" end="1404" type="0" POS="NNPS" lemma="nigerian">Nigerians</token>
+        <token tid="237" begin="1406" end="1408" type="0" POS="VBZ" lemma="have">has</token>
+        <token tid="238" begin="1410" end="1411" type="0" POS="TO" lemma="to">to</token>
+        <token tid="239" begin="1413" end="1414" type="0" POS="VB" lemma="be">be</token>
+        <token tid="240" begin="1416" end="1423" type="0" POS="JJ" lemma="prepared">prepared</token>
+        <token tid="241" begin="1425" end="1427" type="0" POS="IN" lemma="cos">cos</token>
+        <token tid="242" begin="1429" end="1430" type="0" POS="PRP" lemma="we">we</token>
+        <token tid="243" begin="1432" end="1432" type="0" POS="DT" lemma="a">a</token>
+        <token tid="244" begin="1433" end="1433" type="6144" POS="?" lemma="?">?</token>
+      </tokens>
+    </sent>
+    <sent sid="12" begin="245" end="265">
+      <text>Flint becomes U.S. Democratic flash point, but residents want action  https://t.co/uUS1J98ptFAbia North senatorial re-run election inconclusive, INEC says https://t.co/0xgZ6uED7k</text>
+      <parse score="-25.3348">[S [S [NP Flint_NN NP] [VP becomes_VBZ [NP U.S._NNP Democratic_JJ flash_NN point_NN NP] VP] S] ,_, but_CC [S [NP residents_NNS NP] [VP want_VBP [S [NP action_NN https://t.co/uUS1J98ptFAbia_NN North_NNP senatorial_JJ re-run_JJ election_NN NP] [ADJP inconclusive_JJ ADJP] S] VP] S] ,_, [NP INEC_NNP NP] [VP says_VBZ [NP https://t.co/0xgZ6uED7k_ADD NP] VP] S]</parse>
+      <dependency_parse>Flint NN 1 NP becomes VBZ 19 VP U.S. NNP 5 -I Democratic JJ 5 -I flash NN 5 -I point NN 1 NP , , 19 -E but CC 19 -E residents NNS 9 NP want VBP 19 VP action NN 15 -I https://t.co/uUS1J98ptFAbia NN 15 -I North NNP 15 -I senatorial JJ 15 -I re-run JJ 15 -I election NN 16 NP inconclusive JJ 9 ADJP , , 19 -E INEC NNP 19 NP says VBZ -1 VP https://t.co/0xgZ6uED7k ADD 19 NP </dependency_parse>
+      <usd_dependency_parse>Flint NN 1 nsubj becomes VBZ 19 ccomp U.S. NNP 5 name Democratic JJ 5 amod flash NN 5 compound point NN 1 dobj , , 19 punct but CC 19 cc residents NNS 9 nsubj want VBP 19 ccomp action NN 15 compound https://t.co/uUS1J98ptFAbia NN 15 compound North NNP 15 name senatorial JJ 15 amod re-run JJ 15 amod election NN 16 npmod inconclusive JJ 9 xcomp , , 19 punct INEC NNP 19 nsubj says VBZ -1 root https://t.co/0xgZ6uED7k ADD 19 dobj</usd_dependency_parse>
+      <tokens>
+        <token tid="245" begin="1434" end="1438" type="0" POS="NN" lemma="flint">Flint</token>
+        <token tid="246" begin="1440" end="1446" type="0" POS="VBZ" lemma="become">becomes</token>
+        <token tid="247" begin="1448" end="1451" type="0" POS="NNP" lemma="u.s.">U.S.</token>
+        <token tid="248" begin="1453" end="1462" type="0" POS="JJ" lemma="democratic">Democratic</token>
+        <token tid="249" begin="1464" end="1468" type="0" POS="NN" lemma="flash">flash</token>
+        <token tid="250" begin="1470" end="1474" type="0" POS="NN" lemma="point">point</token>
+        <token tid="251" begin="1475" end="1475" type="2048" POS="," lemma=",">,</token>
+        <token tid="252" begin="1477" end="1479" type="0" POS="CC" lemma="but">but</token>
+        <token tid="253" begin="1481" end="1489" type="0" POS="NNS" lemma="resident">residents</token>
+        <token tid="254" begin="1491" end="1494" type="0" POS="VBP" lemma="want">want</token>
+        <token tid="255" begin="1496" end="1501" type="0" POS="NN" lemma="action">action</token>
+        <token tid="256" begin="1504" end="1530" type="0" POS="NN" lemma="https://t.co/uus1j98ptfabia">https://t.co/uUS1J98ptFAbia</token>
+        <token tid="257" begin="1532" end="1536" type="0" POS="NNP" lemma="north">North</token>
+        <token tid="258" begin="1538" end="1547" type="0" POS="JJ" lemma="senatorial">senatorial</token>
+        <token tid="259" begin="1549" end="1554" type="0" POS="JJ" lemma="re-run">re-run</token>
+        <token tid="260" begin="1556" end="1563" type="0" POS="NN" lemma="election">election</token>
+        <token tid="261" begin="1565" end="1576" type="0" POS="JJ" lemma="inconclusive">inconclusive</token>
+        <token tid="262" begin="1577" end="1577" type="2048" POS="," lemma=",">,</token>
+        <token tid="263" begin="1579" end="1582" type="0" POS="NNP" lemma="inec">INEC</token>
+        <token tid="264" begin="1584" end="1587" type="0" POS="VBZ" lemma="say">says</token>
+        <token tid="265" begin="1589" end="1611" type="4096" POS="ADD" lemma="https://t.co/0xgz6ued7k">https://t.co/0xgZ6uED7k</token>
+      </tokens>
+    </sent>
+  </sents>
+  <mentions>
+    <mention mid="-M0" mtype="NONE" begin="18" end="19" head-begin="18" head-end="19" eid="-E30" etype="TICKER" role="TICKER" metonymy="0" class="SPC" score="0.737574" corefScore="1">MT</mention>
+    <mention mid="-M1" mtype="NOM" begin="52" end="72" head-begin="52" head-end="72" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.457356" corefScore="1">Presidential election</mention>
+    <mention mid="-M10" mtype="NONE" begin="252" end="263" head-begin="252" head-end="263" eid="-E32" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.843433" corefScore="0.293529">https://t.co</mention>
+    <mention mid="-M11" mtype="PRO" begin="275" end="277" head-begin="275" head-end="277" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.99513" corefScore="0.964968">him</mention>
+    <mention mid="-M12" mtype="NONE" begin="279" end="284" head-begin="279" head-end="284" eid="-E33" etype="EVENT_COMMUNICATION" role="EVENT_COMMUNICATION" metonymy="0" class="SPC" score="0.966218" corefScore="1">saying</mention>
+    <mention mid="-M13" mtype="PRO" begin="299" end="301" head-begin="299" head-end="301" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.997091" corefScore="0.863283">his</mention>
+    <mention mid="-M14" mtype="NOM" begin="303" end="306" head-begin="303" head-end="306" eid="-E16" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.982484" corefScore="0.298735">kids</mention>
+    <mention mid="-M15" mtype="PRO" begin="333" end="334" head-begin="333" head-end="334" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.879832" corefScore="0.604053">me</mention>
+    <mention mid="-M16" mtype="NAM" begin="339" end="344" head-begin="339" head-end="344" eid="-E3" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.251545" corefScore="0.295083">Buhari</mention>
+    <mention mid="-M17" mtype="NOM" begin="360" end="363" head-begin="360" head-end="363" eid="-E3" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.491738" corefScore="1">liar</mention>
+    <mention mid="-M18" mtype="NOM" begin="375" end="382" head-begin="375" head-end="382" eid="-E17" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.977378" corefScore="0.265064">election</mention>
+    <mention mid="-M19" mtype="NONE" begin="386" end="392" head-begin="386" head-end="392" eid="-E34" etype="EVENT_COMMUNICATION" role="EVENT_COMMUNICATION" metonymy="0" class="SPC" score="0.520159" corefScore="0.274724">claimed</mention>
+    <mention mid="-M2" mtype="NAM" begin="81" end="83" head-begin="81" head-end="83" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.367434" corefScore="1">#2A</mention>
+    <mention mid="-M20" mtype="PRO" begin="412" end="414" head-begin="412" head-end="414" eid="-E47" etype="CARDINAL" role="PERSON" metonymy="0" class="SPC" score="0.372437" corefScore="1">one</mention>
+    <mention mid="-M21" mtype="PRO" begin="445" end="446" head-begin="445" head-end="446" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.967227" corefScore="0.768156">me</mention>
+    <mention mid="-M22" mtype="NOM" begin="456" end="463" head-begin="456" head-end="463" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.995912" corefScore="0.441939">election</mention>
+    <mention mid="-M23" mtype="NONE" begin="468" end="490" head-begin="468" head-end="490" eid="-E35" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.599445" corefScore="0.282904">https://t.co/LiyHhc1Say</mention>
+    <mention mid="-M24" mtype="NONE" begin="494" end="516" head-begin="494" head-end="516" eid="-E36" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.977035" corefScore="0.282904">https://t.co/0SNpDxGUxJ</mention>
+    <mention mid="-M25" mtype="NONE" begin="520" end="552" head-begin="520" head-end="552" eid="-E37" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.815526" corefScore="0.282904">https://t.co/fsiiGS8zKZ@KiryowaKk</mention>
+    <mention mid="-M26" mtype="PRO" begin="554" end="555" head-begin="554" head-end="555" eid="-E16" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.188319" corefScore="0.397455">We</mention>
+    <mention mid="-M27" mtype="NONE" begin="561" end="569" head-begin="561" head-end="569" eid="-E38" etype="EVENT_COMMUNICATION" role="EVENT_COMMUNICATION" metonymy="0" class="SPC" score="0.962634" corefScore="0.244761">answering</mention>
+    <mention mid="-M28" mtype="PRO" begin="633" end="634" head-begin="633" head-end="634" eid="-E16" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.323234" corefScore="0.947252">we</mention>
+    <mention mid="-M29" mtype="NOM" begin="655" end="662" head-begin="655" head-end="662" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.980837" corefScore="0.888142">election</mention>
+    <mention mid="-M3" mtype="NONE" begin="85" end="107" head-begin="85" head-end="107" eid="-E31" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.789619" corefScore="1">https://t.co/X4JuVwGQzT</mention>
+    <mention mid="-M30" mtype="PRO" begin="693" end="695" head-begin="693" head-end="695" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.841479" corefScore="0.385475">you</mention>
+    <mention mid="-M31" mtype="NOM" begin="722" end="727" head-begin="722" head-end="727" eid="-E18" etype="GPE" role="LOCATION" metonymy="0" class="SPC" score="0.640744" corefScore="0.300505">states</mention>
+    <mention mid="-M32" mtype="NOM" begin="741" end="748" head-begin="741" head-end="748" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.962664" corefScore="0.888142">election</mention>
+    <mention mid="-M33" mtype="PRO" begin="751" end="753" head-begin="751" head-end="753" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.950176" corefScore="0.728986">You</mention>
+    <mention mid="-M34" mtype="PRO" begin="787" end="788" head-begin="787" head-end="788" eid="-E16" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.906286" corefScore="0.947252">we</mention>
+    <mention mid="-M35" mtype="NAM" begin="839" end="850" head-begin="839" head-end="850" eid="-E4" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.788967" corefScore="0.295083">Sambo Dasuki</mention>
+    <mention mid="-M36" mtype="PRO" begin="854" end="856" head-begin="854" head-end="856" eid="-E4" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.997688" corefScore="1">his</mention>
+    <mention mid="-M37" mtype="NOM" begin="858" end="864" head-begin="858" head-end="864" eid="-E19" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.991864" corefScore="0.299336">friends</mention>
+    <mention mid="-M38" mtype="NAM" begin="885" end="892" head-begin="885" head-end="892" eid="-E5" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.674941" corefScore="0.297922">Jonathan</mention>
+    <mention mid="-M39" mtype="NONE" begin="905" end="908" head-begin="905" head-end="908" eid="-E39" etype="DATE" role="DATE" metonymy="0" class="SPC" score="0.898496" corefScore="1">2015</mention>
+    <mention mid="-M4" mtype="NAM" begin="142" end="145" head-begin="142" head-end="145" eid="-E1" etype="ORGANIZATION" role="ORGANIZATION" metonymy="0" class="SPC" score="0.339155" corefScore="1">Fico</mention>
+    <mention mid="-M40" mtype="NOM" begin="910" end="917" head-begin="910" head-end="917" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.944561" corefScore="0.812054">election</mention>
+    <mention mid="-M41" mtype="NAM" begin="921" end="949" head-begin="921" head-end="949" eid="-E6" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.528785" corefScore="0.294598">#throwback3015elections https</mention>
+    <mention mid="-M42" mtype="NOM" begin="964" end="971" head-begin="964" head-end="971" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.791386" corefScore="0.276491">election</mention>
+    <mention mid="-M43" mtype="NOM" begin="973" end="979" head-begin="973" head-end="979" eid="-E20" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.965278" corefScore="0.293071">workers</mention>
+    <mention mid="-M44" mtype="NAM" begin="983" end="996" head-begin="983" head-end="996" eid="-E7" etype="GPE" role="ORGANIZATION" metonymy="0" class="SPC" score="0.640952" corefScore="1">Corpus Christi</mention>
+    <mention mid="-M45" mtype="NOM" begin="998" end="1003" head-begin="998" head-end="1003" eid="-E21" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.142006" corefScore="0.266442">Caller</mention>
+    <mention mid="-M46" mtype="NONE" begin="1005" end="1032" head-begin="1005" head-end="1032" eid="-E40" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.767794" corefScore="0.290304">https://t.co/lZIu1cxuWhAfter</mention>
+    <mention mid="-M47" mtype="NONE" begin="1034" end="1038" head-begin="1034" head-end="1038" eid="-E41" etype="CARDINAL" role="CARDINAL" metonymy="0" class="SPC" score="0.211608" corefScore="1">#GE16</mention>
+    <mention mid="-M48" mtype="PRO" begin="1041" end="1045" head-begin="1041" head-end="1045" eid="-E18" etype="GPE" role="LOCATION" metonymy="0" class="SPC" score="0.180868" corefScore="0.362777">where</mention>
+    <mention mid="-M49" mtype="NAM" begin="1056" end="1062" head-begin="1056" head-end="1062" eid="-E8" etype="GPE" role="ORGANIZATION" metonymy="0" class="SPC" score="0.444953" corefScore="1">Ireland</mention>
+    <mention mid="-M5" mtype="PRO" begin="181" end="183" head-begin="181" head-end="183" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.981316" corefScore="0.239066">him</mention>
+    <mention mid="-M50" mtype="NOM" begin="1088" end="1095" head-begin="1088" head-end="1095" eid="-E22" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.533706" corefScore="0.271767">diaspora</mention>
+    <mention mid="-M51" mtype="NOM" begin="1097" end="1102" head-begin="1097" head-end="1102" eid="-E23" etype="LOCATION" role="LOCATION" metonymy="0" class="SPC" score="0.74146" corefScore="1">abroad</mention>
+    <mention mid="-M52" mtype="PRO" begin="1105" end="1106" head-begin="1105" head-end="1106" eid="-E4" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.957322" corefScore="0.862393">My</mention>
+    <mention mid="-M53" mtype="NOM" begin="1127" end="1134" head-begin="1127" head-end="1134" eid="-E14" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.994397" corefScore="0.812054">election</mention>
+    <mention mid="-M54" mtype="NONE" begin="1138" end="1160" head-begin="1138" head-end="1160" eid="-E42" etype="TIME" role="TIME" metonymy="0" class="SPC" score="1" corefScore="1">https://t.co/zzToz69AX1</mention>
+    <mention mid="-M55" mtype="NOM" begin="1173" end="1174" head-begin="1173" head-end="1174" eid="-E24" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.982528" corefScore="0.268767">mr</mention>
+    <mention mid="-M56" mtype="NOM" begin="1189" end="1200" head-begin="1189" head-end="1200" eid="-E25" etype="PERSON" role="OCCUPATION" metonymy="0" class="SPC" score="0.393639" corefScore="0.244155">pm candidate</mention>
+    <mention mid="-M57" mtype="NONE" begin="1206" end="1209" head-begin="1206" head-end="1209" eid="-E43" etype="DATE" role="DATE" metonymy="0" class="SPC" score="0.514" corefScore="0.300824">2019</mention>
+    <mention mid="-M58" mtype="NOM" begin="1211" end="1218" head-begin="1211" head-end="1218" eid="-E26" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.938776" corefScore="0.232733">election</mention>
+    <mention mid="-M59" mtype="NAM" begin="1224" end="1231" head-begin="1224" head-end="1231" eid="-E9" etype="ORGANIZATION" role="ORGANIZATION" metonymy="0" class="SPC" score="0.873508" corefScore="1">Congress</mention>
+    <mention mid="-M6" mtype="PRO" begin="186" end="187" head-begin="186" head-end="187" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.943591" corefScore="0.823132">He</mention>
+    <mention mid="-M60" mtype="PRO" begin="1254" end="1255" head-begin="1254" head-end="1255" eid="-E48" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.645881" corefScore="0.279306">us</mention>
+    <mention mid="-M61" mtype="NOM" begin="1353" end="1360" head-begin="1353" head-end="1360" eid="-E27" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.948972" corefScore="0.232733">election</mention>
+    <mention mid="-M62" mtype="NOM" begin="1396" end="1404" head-begin="1396" head-end="1404" eid="-E28" etype="GPE" role="PEOPLE" metonymy="0" class="SPC" score="0.585691" corefScore="0.300558">Nigerians</mention>
+    <mention mid="-M63" mtype="PRO" begin="1429" end="1430" head-begin="1429" head-end="1430" eid="-E48" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.867812" corefScore="0.798522">we</mention>
+    <mention mid="-M64" mtype="NAM" begin="1434" end="1438" head-begin="1434" head-end="1438" eid="-E10" etype="GPE" role="LOCATION" metonymy="0" class="SPC" score="0.353931" corefScore="0.301122">Flint</mention>
+    <mention mid="-M65" mtype="NAM" begin="1448" end="1451" head-begin="1448" head-end="1451" eid="-E11" etype="GPE" role="LOCATION" metonymy="0" class="SPC" score="0.598458" corefScore="0.301178">U.S.</mention>
+    <mention mid="-M66" mtype="NAM" begin="1453" end="1462" head-begin="1453" head-end="1462" eid="-E12" etype="ORGANIZATION" role="ORGANIZATION" metonymy="0" class="SPC" score="0.35413" corefScore="0.278277">Democratic</mention>
+    <mention mid="-M67" mtype="NOM" begin="1481" end="1489" head-begin="1481" head-end="1489" eid="-E29" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.994035" corefScore="0.283631">residents</mention>
+    <mention mid="-M68" mtype="NONE" begin="1504" end="1530" head-begin="1504" head-end="1530" eid="-E44" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.816319" corefScore="0.290304">https://t.co/uUS1J98ptFAbia</mention>
+    <mention mid="-M69" mtype="NAM" begin="1532" end="1536" head-begin="1532" head-end="1536" eid="-E13" etype="GPE" role="ORGANIZATION" metonymy="0" class="SPC" score="0.132798" corefScore="0.25828">North</mention>
+    <mention mid="-M7" mtype="PRO" begin="194" end="196" head-begin="194" head-end="196" eid="-E0" etype="PERSON" role="PERSON" metonymy="0" class="SPC" score="0.986433" corefScore="0.965229">his</mention>
+    <mention mid="-M70" mtype="NOM" begin="1556" end="1563" head-begin="1556" head-end="1563" eid="-E26" etype="EVENT_ELECTION" role="EVENT_ELECTION" metonymy="0" class="SPC" score="0.925886" corefScore="0.278056">election</mention>
+    <mention mid="-M71" mtype="NONE" begin="1584" end="1587" head-begin="1584" head-end="1587" eid="-E45" etype="EVENT_COMMUNICATION" role="EVENT_COMMUNICATION" metonymy="0" class="SPC" score="0.974982" corefScore="0.239371">says</mention>
+    <mention mid="-M72" mtype="NONE" begin="1589" end="1611" head-begin="1589" head-end="1611" eid="-E46" etype="WEB" role="WEB" metonymy="0" class="SPC" score="0.993544" corefScore="0.290304">https://t.co/0xgZ6uED7k</mention>
+    <mention mid="-M8" mtype="NOM" begin="198" end="205" head-begin="198" head-end="205" eid="-E15" etype="PEOPLE" role="PEOPLE" metonymy="0" class="SPC" score="0.626723" corefScore="1">majority</mention>
+    <mention mid="-M9" mtype="NAM" begin="234" end="250" head-begin="234" head-end="250" eid="-E2" etype="ORGANIZATION" role="ORGANIZATION" metonymy="0" class="SPC" score="0.24666" corefScore="1">Slovak parliament</mention>
+  </mentions>
+  <entities>
+    <entity eid="-E0" type="PERSON" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.678348">
+      <mentref mid="-M2">#2A</mentref>
+      <mentref mid="-M5">him</mentref>
+      <mentref mid="-M6">He</mentref>
+      <mentref mid="-M7">his</mentref>
+      <mentref mid="-M11">him</mentref>
+      <mentref mid="-M13">his</mentref>
+      <mentref mid="-M15">me</mentref>
+      <mentref mid="-M21">me</mentref>
+      <mentref mid="-M30">you</mentref>
+      <mentref mid="-M33">You</mentref>
+    </entity>
+    <entity eid="-E1" type="ORGANIZATION" generic="0" class="SPC" level="NAM" subtype="COMMERCIAL" score="1">
+      <mentref mid="-M4">Fico</mentref>
+    </entity>
+    <entity eid="-E10" type="GPE" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.301122">
+      <mentref mid="-M64">Flint</mentref>
+    </entity>
+    <entity eid="-E11" type="GPE" generic="0" class="SPC" level="NAM" subtype="COUNTRY" score="0.301178">
+      <mentref mid="-M65">U.S.</mentref>
+    </entity>
+    <entity eid="-E12" type="ORGANIZATION" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.278277">
+      <mentref mid="-M66">Democratic</mentref>
+    </entity>
+    <entity eid="-E13" type="GPE" generic="0" class="SPC" level="NAM" subtype="COUNTRY" score="0.25828">
+      <mentref mid="-M69">North</mentref>
+    </entity>
+    <entity eid="-E14" type="EVENT_ELECTION" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.674567">
+      <mentref mid="-M1">Presidential election</mentref>
+      <mentref mid="-M22">election</mentref>
+      <mentref mid="-M29">election</mentref>
+      <mentref mid="-M32">election</mentref>
+      <mentref mid="-M40">election</mentref>
+      <mentref mid="-M42">election</mentref>
+      <mentref mid="-M53">election</mentref>
+    </entity>
+    <entity eid="-E15" type="PEOPLE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="1">
+      <mentref mid="-M8">majority</mentref>
+    </entity>
+    <entity eid="-E16" type="PEOPLE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.571316">
+      <mentref mid="-M14">kids</mentref>
+      <mentref mid="-M26">We</mentref>
+      <mentref mid="-M28">we</mentref>
+      <mentref mid="-M34">we</mentref>
+    </entity>
+    <entity eid="-E17" type="EVENT_ELECTION" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.265064">
+      <mentref mid="-M18">election</mentref>
+    </entity>
+    <entity eid="-E18" type="GPE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.330176">
+      <mentref mid="-M31">states</mentref>
+      <mentref mid="-M48">where</mentref>
+    </entity>
+    <entity eid="-E19" type="PEOPLE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.299336">
+      <mentref mid="-M37">friends</mentref>
+    </entity>
+    <entity eid="-E2" type="ORGANIZATION" generic="0" class="SPC" level="NAM" subtype="OTHER" score="1">
+      <mentref mid="-M9">Slovak parliament</mentref>
+    </entity>
+    <entity eid="-E20" type="PEOPLE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.293071">
+      <mentref mid="-M43">workers</mentref>
+    </entity>
+    <entity eid="-E21" type="PERSON" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.266442">
+      <mentref mid="-M45">Caller</mentref>
+    </entity>
+    <entity eid="-E22" type="PEOPLE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.271767">
+      <mentref mid="-M50">diaspora</mentref>
+    </entity>
+    <entity eid="-E23" type="LOCATION" generic="0" class="SPC" level="NOM" subtype="OTHER" score="1">
+      <mentref mid="-M51">abroad</mentref>
+    </entity>
+    <entity eid="-E24" type="PERSON" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.268767">
+      <mentref mid="-M55">mr</mentref>
+    </entity>
+    <entity eid="-E25" type="PERSON" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.244155">
+      <mentref mid="-M56">pm candidate</mentref>
+    </entity>
+    <entity eid="-E26" type="EVENT_ELECTION" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.254387">
+      <mentref mid="-M58">election</mentref>
+      <mentref mid="-M70">election</mentref>
+    </entity>
+    <entity eid="-E27" type="EVENT_ELECTION" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.232733">
+      <mentref mid="-M61">election</mentref>
+    </entity>
+    <entity eid="-E28" type="GPE" generic="0" class="SPC" level="NOM" subtype="COUNTRY" score="0.300558">
+      <mentref mid="-M62">Nigerians</mentref>
+    </entity>
+    <entity eid="-E29" type="PEOPLE" generic="0" class="SPC" level="NOM" subtype="OTHER" score="0.283631">
+      <mentref mid="-M67">residents</mentref>
+    </entity>
+    <entity eid="-E3" type="PERSON" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.543215">
+      <mentref mid="-M16">Buhari</mentref>
+      <mentref mid="-M17">liar</mentref>
+    </entity>
+    <entity eid="-E30" type="TICKER" generic="0" class="SPC" level="NONE" subtype="OTHER" score="1">
+      <mentref mid="-M0">MT</mentref>
+    </entity>
+    <entity eid="-E31" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="1">
+      <mentref mid="-M3">https://t.co/X4JuVwGQzT</mentref>
+    </entity>
+    <entity eid="-E32" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.293529">
+      <mentref mid="-M10">https://t.co</mentref>
+    </entity>
+    <entity eid="-E33" type="EVENT_COMMUNICATION" generic="0" class="SPC" level="NONE" subtype="OTHER" score="1">
+      <mentref mid="-M12">saying</mentref>
+    </entity>
+    <entity eid="-E34" type="EVENT_COMMUNICATION" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.274724">
+      <mentref mid="-M19">claimed</mentref>
+    </entity>
+    <entity eid="-E35" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.282904">
+      <mentref mid="-M23">https://t.co/LiyHhc1Say</mentref>
+    </entity>
+    <entity eid="-E36" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.282904">
+      <mentref mid="-M24">https://t.co/0SNpDxGUxJ</mentref>
+    </entity>
+    <entity eid="-E37" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.282904">
+      <mentref mid="-M25">https://t.co/fsiiGS8zKZ@KiryowaKk</mentref>
+    </entity>
+    <entity eid="-E38" type="EVENT_COMMUNICATION" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.244761">
+      <mentref mid="-M27">answering</mentref>
+    </entity>
+    <entity eid="-E39" type="DATE" generic="0" class="SPC" level="NONE" subtype="OTHER" score="1">
+      <mentref mid="-M39">2015</mentref>
+    </entity>
+    <entity eid="-E4" type="PERSON" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.633699">
+      <mentref mid="-M35">Sambo Dasuki</mentref>
+      <mentref mid="-M36">his</mentref>
+      <mentref mid="-M52">My</mentref>
+    </entity>
+    <entity eid="-E40" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.290304">
+      <mentref mid="-M46">https://t.co/lZIu1cxuWhAfter</mentref>
+    </entity>
+    <entity eid="-E41" type="CARDINAL" generic="0" class="SPC" level="NONE" subtype="OTHER" score="1">
+      <mentref mid="-M47">#GE16</mentref>
+    </entity>
+    <entity eid="-E42" type="TIME" generic="0" class="SPC" level="NONE" subtype="OTHER" score="1">
+      <mentref mid="-M54">https://t.co/zzToz69AX1</mentref>
+    </entity>
+    <entity eid="-E43" type="DATE" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.300824">
+      <mentref mid="-M57">2019</mentref>
+    </entity>
+    <entity eid="-E44" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.290304">
+      <mentref mid="-M68">https://t.co/uUS1J98ptFAbia</mentref>
+    </entity>
+    <entity eid="-E45" type="EVENT_COMMUNICATION" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.239371">
+      <mentref mid="-M71">says</mentref>
+    </entity>
+    <entity eid="-E46" type="WEB" generic="0" class="SPC" level="NONE" subtype="OTHER" score="0.290304">
+      <mentref mid="-M72">https://t.co/0xgZ6uED7k</mentref>
+    </entity>
+    <entity eid="-E47" type="CARDINAL" generic="0" class="SPC" level="PRO" subtype="OTHER" score="1">
+      <mentref mid="-M20">one</mentref>
+    </entity>
+    <entity eid="-E48" type="PEOPLE" generic="0" class="SPC" level="PRO" subtype="OTHER" score="0.472263">
+      <mentref mid="-M60">us</mentref>
+      <mentref mid="-M63">we</mentref>
+    </entity>
+    <entity eid="-E5" type="PERSON" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.297922">
+      <mentref mid="-M38">Jonathan</mentref>
+    </entity>
+    <entity eid="-E6" type="PERSON" generic="0" class="SPC" level="NAM" subtype="OTHER" score="0.294598">
+      <mentref mid="-M41">#throwback3015elections https</mentref>
+    </entity>
+    <entity eid="-E7" type="GPE" generic="0" class="SPC" level="NAM" subtype="OTHER" score="1">
+      <mentref mid="-M44">Corpus Christi</mentref>
+    </entity>
+    <entity eid="-E8" type="GPE" generic="0" class="SPC" level="NAM" subtype="COUNTRY" score="1">
+      <mentref mid="-M49">Ireland</mentref>
+    </entity>
+    <entity eid="-E9" type="ORGANIZATION" generic="0" class="SPC" level="NAM" subtype="GOVERNMENT" score="1">
+      <mentref mid="-M59">Congress</mentref>
+    </entity>
+  </entities>
+  <relations version="KLUE2_cascaded:2011_10_25">
+    <relation rid="-R1" type="hasAttribute" subtype="OTHER">
+      <rel_entity_arg eid="-E2" argnum="1"/>
+      <rel_entity_arg eid="-E32" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R1-1" score="0.741531" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M9" argnum="1">Slovak parliament</rel_mention_arg>
+          <rel_mention_arg mid="-M10" argnum="2">https://t.co</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R2" type="agentOf" subtype="OTHER">
+      <rel_entity_arg eid="-E0" argnum="1"/>
+      <rel_entity_arg eid="-E33" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R2-1" score="0.997993" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M11" argnum="1">him</rel_mention_arg>
+          <rel_mention_arg mid="-M12" argnum="2">saying</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R3" type="agentOf" subtype="OTHER">
+      <rel_entity_arg eid="-E16" argnum="1"/>
+      <rel_entity_arg eid="-E38" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R3-1" score="0.964295" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M26" argnum="1">We</rel_mention_arg>
+          <rel_mention_arg mid="-M27" argnum="2">answering</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R4" type="timeOf" subtype="OTHER">
+      <rel_entity_arg eid="-E39" argnum="1"/>
+      <rel_entity_arg eid="-E14" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R4-1" score="0.938522" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M39" argnum="1">2015</rel_mention_arg>
+          <rel_mention_arg mid="-M40" argnum="2">election</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R5" type="affectedBy" subtype="OTHER">
+      <rel_entity_arg eid="-E20" argnum="1"/>
+      <rel_entity_arg eid="-E14" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R5-1" score="0.169252" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M43" argnum="1">workers</rel_mention_arg>
+          <rel_mention_arg mid="-M42" argnum="2">election</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R6" type="employedBy" subtype="OTHER">
+      <rel_entity_arg eid="-E21" argnum="1"/>
+      <rel_entity_arg eid="-E7" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R6-1" score="0.603428" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M45" argnum="1">Caller</rel_mention_arg>
+          <rel_mention_arg mid="-M44" argnum="2">Corpus Christi</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R7" type="locatedAt" subtype="OTHER">
+      <rel_entity_arg eid="-E22" argnum="1"/>
+      <rel_entity_arg eid="-E23" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R7-1" score="0.73463" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M50" argnum="1">diaspora</rel_mention_arg>
+          <rel_mention_arg mid="-M51" argnum="2">abroad</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R8" type="timeOf" subtype="OTHER">
+      <rel_entity_arg eid="-E43" argnum="1"/>
+      <rel_entity_arg eid="-E26" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R8-1" score="0.937806" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M57" argnum="1">2019</rel_mention_arg>
+          <rel_mention_arg mid="-M58" argnum="2">election</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+    <relation rid="-R9" type="basedIn" subtype="OTHER">
+      <rel_entity_arg eid="-E12" argnum="1"/>
+      <rel_entity_arg eid="-E11" argnum="2"/>
+      <relmentions>
+        <relmention rmid="-R9-1" score="0.849675" class="SPECIFIC" modality="ASSERTED" tense="UNSPECIFIED">
+          <rel_mention_arg mid="-M66" argnum="1">Democratic</rel_mention_arg>
+          <rel_mention_arg mid="-M65" argnum="2">U.S.</rel_mention_arg>
+        </relmention>
+      </relmentions>
+    </relation>
+  </relations>
+  <sgml_sent_info/>
+  <sgml_char_info/>
+</doc></rep>

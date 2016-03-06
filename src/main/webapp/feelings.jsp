@@ -63,6 +63,7 @@
 					</div>
 					<div class="row text-center top-margin-25">
 						<form role="form" action="/rankSeach">
+							<input type="hidden" value="${requestScope.subject}" name="subject">
 							<div class="col-md-12">
 								<button type="submit" class="btn btn-info">Show me what they are talking!</button>
 							</div>

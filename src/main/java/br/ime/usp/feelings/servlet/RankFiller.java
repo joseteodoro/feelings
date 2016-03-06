@@ -15,6 +15,8 @@ public class RankFiller {
 	protected final static String SUBJECT_PARAMETER_NAME = "subject";
 
 	protected static final String REDIRECT_DESTINATION = "/rank.jsp";
+
+	private static final String RANK_PARAMETER_NAME = "ranks";
 	
 	private final FeelingsActor<RankItem> feelingActor;
 	
@@ -35,7 +37,9 @@ public class RankFiller {
 	}
 
 	private void putRanksOnRequest(HttpServletRequest request, Collection<RankItem> ranks) {
-		ranks.forEach(rank -> request.setAttribute(rank.getLabel(), rank));
+		String subject = request.getParameter(SUBJECT_PARAMETER_NAME);
+		request.setAttribute(SUBJECT_PARAMETER_NAME, subject);
+		request.setAttribute(RANK_PARAMETER_NAME, ranks);
 	}
 
 	private Collection<RankItem> getRanks(String subject) {

@@ -21,7 +21,7 @@ public class RankServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// just for local testing
 		 ContentFactory<RankItem> factory = new FakeRankItensContentFactory();
-//		RetrieverFactory factory = new DefaultRankItensContentFactory();
+//		RetrieverFactory factory = new DefaultRankContentFactory();
 		FeelingsActor<RankItem> actor = new FeelingsActor<>(factory);
 		RankFiller rankFiller = new RankFiller(actor);
 		rankFiller.fillAndRedirect(request, response);

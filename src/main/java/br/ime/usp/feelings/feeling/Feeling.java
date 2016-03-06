@@ -1,4 +1,4 @@
-package br.ime.usp.feelings;
+package br.ime.usp.feelings.feeling;
 
 public class Feeling {
 

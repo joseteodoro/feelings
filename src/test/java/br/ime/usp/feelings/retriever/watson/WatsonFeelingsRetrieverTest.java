@@ -6,8 +6,8 @@ import java.util.Collection;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import br.ime.usp.feelings.Feeling;
-import br.ime.usp.feelings.FeelingEnum;
+import br.ime.usp.feelings.feeling.Feeling;
+import br.ime.usp.feelings.feeling.FeelingEnum;
 import junit.framework.Assert;
 
 public class WatsonFeelingsRetrieverTest {
@@ -24,7 +24,7 @@ public class WatsonFeelingsRetrieverTest {
 		expectedValue.setSadness(5f);
 		Mockito.when(adapter.callWatson(Mockito.anyString())).thenReturn(expectedValue);
 		WatsonFeelingsRetriever retriever = new WatsonFeelingsRetriever(adapter);
-		Collection<Feeling> found = retriever.retrieve(contents);
+		Collection<Feeling> found = retriever.doProcess(contents);
 		Assert.assertNotNull(found);
 		Assert.assertFalse(found.isEmpty());
 		Assert.assertTrue(found.contains(new Feeling(FeelingEnum.ANGER, expectedValue.getAnger())));

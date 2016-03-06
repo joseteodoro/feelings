@@ -1,12 +1,12 @@
-package br.ime.usp.feelings;
+package br.ime.usp.feelings.rank;
 
-public class RankItens {
+public class RankItem {
 	
 	private int rank;
 	
 	private String label;
 	
-	public RankItens(int rank, String label) {
+	public RankItem(int rank, String label) {
 		super();
 		this.rank = rank;
 		this.label = label;

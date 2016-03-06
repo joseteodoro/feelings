@@ -7,8 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.ime.usp.feelings.Feeling;
-import br.ime.usp.feelings.FeelingActor;
+import br.ime.usp.feelings.feeling.Feeling;
+import br.ime.usp.feelings.retriever.FeelingsActor;
 
 public class FeelingFiller {
 	
@@ -16,9 +16,9 @@ public class FeelingFiller {
 
 	protected static final String REDIRECT_DESTINATION = "/feelings.jsp";
 	
-	private final FeelingActor feelingActor;
+	private final FeelingsActor<Feeling> feelingActor;
 	
-	public FeelingFiller(FeelingActor feelingActor) {
+	public FeelingFiller(FeelingsActor<Feeling> feelingActor) {
 		this.feelingActor = feelingActor;
 	}
 
@@ -40,7 +40,7 @@ public class FeelingFiller {
 	}
 
 	private Collection<Feeling> getFeelings(String subject) {
-		Collection<Feeling> feelings = feelingActor.getFeelings(subject);
+		Collection<Feeling> feelings = feelingActor.doProcess(subject);
 		return feelings;
 	}
 }

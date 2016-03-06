@@ -2,7 +2,7 @@ package br.ime.usp.feelings.retriever.content.twitter;
 
 import java.util.Collection;
 
-import br.ime.usp.feelings.retriever.ContentRetriever;
+import br.ime.usp.feelings.retriever.factory.ContentRetriever;
 
 public class DefaultContentRetriever implements ContentRetriever {
 

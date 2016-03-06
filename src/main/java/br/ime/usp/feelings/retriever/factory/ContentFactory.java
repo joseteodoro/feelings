@@ -1,6 +1,4 @@
-package br.ime.usp.feelings;
-
-import br.ime.usp.feelings.retriever.ContentRetriever;
+package br.ime.usp.feelings.retriever.factory;
 
 public interface ContentFactory<T> {
 

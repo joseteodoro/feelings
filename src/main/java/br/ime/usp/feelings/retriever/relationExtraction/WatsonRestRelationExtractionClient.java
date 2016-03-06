@@ -30,40 +30,16 @@ import br.ime.usp.feelings.retriever.watson.WatsonAlchemyEmotionCaller;
  * 
  * 
  */
-public class WatsonRestRelationExtractionClient implements WatsonAlchemyEmotionCaller {
+public class WatsonRestRelationExtractionClient extends AbstractRestBluemixClient {
 
-	private static final int SUCCESS_CODE = 200;
-	
 	private static final String WATSON_RELATION_EXTRACTION_SERVICE_URL = "watson.relation.extraction.service";
 	
 	private static final String WATSON_RELATION_EXTRACTION_USER_NAME = "watson.relation.extraction.user";
 	
 	private static final String WATSON_RELATION_EXTRACTION_PASS = "watson.relation.extraction.pass";
 	
-	public String call(String subject) {
-		try {
-			HttpPost postRequest = createRestJsonRequest(subject);
-			HttpResponse response = doRequest(postRequest);
-			return responseToString(response);
-		} catch (IOException ioex) {
-			String messageError = "Error getting data from Watson.";
-			Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, messageError, ioex);
-			throw new RetrieveException(messageError, ioex);
-		}
-	}
-
-	private HttpResponse doRequest(HttpPost postRequest) throws IOException{
-		HttpClient httpClient = HttpClientBuilder.create().build();
-		HttpResponse response = httpClient.execute(postRequest);
-		if (response.getStatusLine().getStatusCode() != SUCCESS_CODE) {
-			String errorMessage = "Failed : HTTP error code : " + response.getStatusLine().getStatusCode();
-			Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, errorMessage);
-			throw new RetrieveException(errorMessage);
-		}
-		return response;
-	}
-
-	private HttpPost createRestJsonRequest(String subject) {
+	@Override
+	protected HttpPost createRestJsonRequest(String subject) {
 		String serviceUrl = System.getProperty(WATSON_RELATION_EXTRACTION_SERVICE_URL);
 		HttpPost postRequest = new HttpPost(serviceUrl);
 		postRequest.addHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -79,17 +55,6 @@ public class WatsonRestRelationExtractionClient implements WatsonAlchemyEmotionC
 		UrlEncodedFormEntity urlEncodedFormEntity = new UrlEncodedFormEntity(parameters);
 		postRequest.setEntity(urlEncodedFormEntity);
 		return postRequest;
-	}
-
-	private String responseToString(HttpResponse response) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader((response.getEntity().getContent())));
-		String responseContent = IOUtils.toString(br);
-		if (!responseContent.contains("OK")) {
-			String errorMessage = "Failed getting data from Watson. Response: " + responseContent;
-			Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, errorMessage);
-			throw new RetrieveException(errorMessage);
-		}
-		return responseContent;
 	}
 
 }

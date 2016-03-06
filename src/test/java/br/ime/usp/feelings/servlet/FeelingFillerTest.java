@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import br.ime.usp.feelings.Feeling;
-import br.ime.usp.feelings.FeelingActor;
-import br.ime.usp.feelings.FeelingEnum;
+import br.ime.usp.feelings.feeling.Feeling;
+import br.ime.usp.feelings.feeling.FeelingEnum;
+import br.ime.usp.feelings.retriever.FeelingsActor;
 
 public class FeelingFillerTest {
 	
@@ -23,7 +23,7 @@ public class FeelingFillerTest {
 		String subject = "subject";
 		Feeling feeling = new Feeling(FeelingEnum.JOY, 0.5f);
 		Collection<Feeling> feelings = Arrays.asList(feeling);
-		FeelingActor feelingActor = setupActor(subject, feelings);
+		FeelingsActor<Feeling> feelingActor = setupActor(subject, feelings);
 		HttpServletRequest request = setupRequest(subject);
 		FeelingFiller feelingFiller = new FeelingFiller(feelingActor);
 		HttpServletResponse response = Mockito.mock(HttpServletResponse.class);
@@ -34,9 +34,9 @@ public class FeelingFillerTest {
 		Mockito.verify(request).getRequestDispatcher(FeelingFiller.REDIRECT_DESTINATION);
 	}
 
-	private FeelingActor setupActor(String subject, Collection<Feeling> feelings) {
-		FeelingActor feelingActor = Mockito.mock(FeelingActor.class);
-		Mockito.when(feelingActor.getFeelings(subject)).thenReturn(feelings);
+	private FeelingsActor<Feeling> setupActor(String subject, Collection<Feeling> feelings) {
+		FeelingsActor<Feeling> feelingActor = Mockito.mock(FeelingsActor.class);
+		Mockito.when(feelingActor.doProcess(subject)).thenReturn(feelings);
 		return feelingActor;
 	}
 

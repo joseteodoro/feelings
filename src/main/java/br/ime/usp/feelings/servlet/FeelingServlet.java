@@ -7,9 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.ime.usp.feelings.FeelingActor;
-import br.ime.usp.feelings.retriever.FakeRetrieverFactory;
-import br.ime.usp.feelings.retriever.RetrieverFactory;
+import br.ime.usp.feelings.feeling.FakeRetrieverFactory;
+import br.ime.usp.feelings.feeling.Feeling;
+import br.ime.usp.feelings.retriever.FeelingsActor;
+import br.ime.usp.feelings.retriever.factory.ContentFactory;
 
 /**
  * 
@@ -22,9 +23,9 @@ public class FeelingServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// just for local testing
-		 RetrieverFactory factory = new FakeRetrieverFactory();
-//		RetrieverFactory factory = new DefaultRetrieverFactory();
-		FeelingActor actor = new FeelingActor(factory);
+//			RetrieverFactory factory = new DefaultRankItensContentFactory();
+		ContentFactory<Feeling> factory = new FakeRetrieverFactory();
+			FeelingsActor<Feeling> actor = new FeelingsActor<>(factory);
 		FeelingFiller feelingFiller = new FeelingFiller(actor);
 		feelingFiller.fillAndRedirect(request, response);
 	}

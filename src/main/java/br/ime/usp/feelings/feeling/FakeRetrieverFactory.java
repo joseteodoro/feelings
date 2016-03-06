@@ -1,15 +1,15 @@
-package br.ime.usp.feelings.retriever;
+package br.ime.usp.feelings.feeling;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-import br.ime.usp.feelings.Feeling;
-import br.ime.usp.feelings.FeelingEnum;
-import br.ime.usp.feelings.RankItens;
+import br.ime.usp.feelings.retriever.factory.ContentFactory;
+import br.ime.usp.feelings.retriever.factory.ContentProcessor;
+import br.ime.usp.feelings.retriever.factory.ContentRetriever;
 
-public class FakeRetrieverFactory implements RetrieverFactory {
+public class FakeRetrieverFactory implements ContentFactory<Feeling> {
 
 	@Override
 	public ContentRetriever setupContentRetriever() {
@@ -28,10 +28,10 @@ public class FakeRetrieverFactory implements RetrieverFactory {
 	}
 
 	@Override
-	public FeelingsRetriever setupFeelingsRetriever() {
-		return new FeelingsRetriever() {
+	public ContentProcessor<Feeling> setupProcessor() {
+		return new ContentProcessor<Feeling>() {
 			@Override
-			public Collection<Feeling> retrieve(Collection<String> content) {
+			public Collection<Feeling> doProcess(Collection<String> content) {
 				List<Feeling> fls = new LinkedList<>();
 
 				for (FeelingEnum selectd : FeelingEnum.values()) {

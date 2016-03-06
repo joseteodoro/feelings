@@ -1,4 +1,4 @@
-package br.ime.usp.feelings.retriever;
+package br.ime.usp.feelings.retriever.factory;
 
 import java.util.Collection;
 

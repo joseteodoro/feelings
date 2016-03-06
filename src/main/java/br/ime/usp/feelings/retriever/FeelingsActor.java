@@ -1,8 +1,10 @@
-package br.ime.usp.feelings;
+package br.ime.usp.feelings.retriever;
 
 import java.util.Collection;
 
-import br.ime.usp.feelings.retriever.ContentRetriever;
+import br.ime.usp.feelings.retriever.factory.ContentFactory;
+import br.ime.usp.feelings.retriever.factory.ContentProcessor;
+import br.ime.usp.feelings.retriever.factory.ContentRetriever;
 
 public class FeelingsActor<TARGET> {
 	

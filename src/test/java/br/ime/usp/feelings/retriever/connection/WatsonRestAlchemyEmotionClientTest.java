@@ -1,4 +1,6 @@
-package br.ime.usp.feelings.retriever.watson;
+package br.ime.usp.feelings.retriever.connection;
+
+import br.ime.usp.feelings.retriever.watson.WatsonRestAlchemyEmotionClient;
 
 /**
  * 

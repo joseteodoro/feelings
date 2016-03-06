@@ -1,4 +1,4 @@
-package br.ime.usp.feelings.retriever.twitter;
+package br.ime.usp.feelings.retriever.connection;
 
 import java.util.Collection;
 import java.util.List;

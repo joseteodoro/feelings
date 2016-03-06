@@ -12,7 +12,12 @@ public class FakeRetrieverFactory implements RetrieverFactory {
 
 	@Override
 	public ContentRetriever setupContentRetriever() {
-		// return new DefaultContentRetriever();
+		//mocking an internet delay
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return new ContentRetriever() {
 			@Override
 			public Collection<String> retrieve(String subject) {

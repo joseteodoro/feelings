@@ -21,7 +21,8 @@ public class FeelingServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		RetrieverFactory factory = new FakeRetrieverFactory();
+		// just for local testing
+		// RetrieverFactory factory = new FakeRetrieverFactory();
 		RetrieverFactory factory = new DefaultRetrieverFactory();
 		FeelingActor actor = new FeelingActor(factory);
 		FeelingFiller feelingFiller = new FeelingFiller(actor);

@@ -28,8 +28,12 @@ public class Feeling {
 		this.score = score;
 	}
 	
+	/**
+	 * Just scale to show inside the view.
+	 * @return scaled score.
+	 */
 	public float scaleToShow() {
-		return score*100f+1;
+		return score*200f+5;
 	}
 
 	@Override

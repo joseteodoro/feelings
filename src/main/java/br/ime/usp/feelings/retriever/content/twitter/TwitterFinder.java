@@ -61,7 +61,7 @@ public class TwitterFinder implements Finder {
 	private Collection<String> doSearch(String queryString) {
 		Query query = new Query(queryString);
 		query.setLang("en");
-		query.setCount(25);
+		query.setCount(50);
 		QueryResult result;
 		Collection<String> results = new HashSet<String>();
 		try {

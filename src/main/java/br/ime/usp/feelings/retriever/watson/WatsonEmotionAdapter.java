@@ -20,7 +20,6 @@ public class WatsonEmotionAdapter {
 		String json = this.caller.call(parameter);
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
-			System.out.println(json);
 			AlchemyLanguageEmotionAnswer readValue = objectMapper.readValue(json, AlchemyRestAnswer.class).getDocEmotions();
 			return readValue;
 		} catch (Exception ioex) {

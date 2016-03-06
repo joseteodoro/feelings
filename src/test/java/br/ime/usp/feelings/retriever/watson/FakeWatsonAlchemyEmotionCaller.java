@@ -1,6 +1,6 @@
 package br.ime.usp.feelings.retriever.watson;
 
-public class FakeWatsonAlchemyEmotionCaller extends WatsonAlchemyEmotionCaller {
+public class FakeWatsonAlchemyEmotionCaller implements WatsonAlchemyEmotionCaller {
 
 	protected float anger = 0.67753f;
 	protected float disgust = 0.048157f;

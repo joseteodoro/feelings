@@ -12,15 +12,16 @@ import br.ime.usp.feelings.rank.RankItem;
 
 public class XmlToRankConverterTest {
 
-	
 	@Test
 	public void readAXml() throws IOException {
 		XmlToRankConverter converter = new XmlToRankConverter();
 		String content = this.getContent();
-		Collection<RankItem> found = converter.getRanks(content);
+		Collection<RankItem> found = converter.getRanks(content, XmlToRankConverter.EVENT_REGEX, XmlToRankConverter.PEOPLE_REGEX);
 		Assert.assertNotNull(found);
 		Assert.assertFalse(found.isEmpty());
-		Assert.assertEquals("Presidential election", found.iterator().next().getLabel());
+		Assert.assertEquals(22,found.size());
+		Assert.assertNotNull(found.iterator().next().getLabel());
+		Assert.assertFalse(found.iterator().next().getLabel().isEmpty());
 	}
 
 	private String getContent() throws IOException {

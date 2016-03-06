@@ -24,8 +24,9 @@ public class FeelingFiller {
 
 	public void fillAndRedirect(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String subject = request.getParameter(SUBJECT_PARAMETER_NAME);
+		request.setAttribute(SUBJECT_PARAMETER_NAME, subject);
 		Collection<Feeling> feelings = getFeelings(subject);
-		putFeelingsOnRequest(request, feelings);		
+		putFeelingsOnRequest(request, feelings);
 		redirectWithFeelings(request, response);
 	}
 	

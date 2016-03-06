@@ -16,7 +16,10 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <style type="text/css">
 .pushDown {
-	margin-top: 20%;
+	margin-top: 10%;
+}
+.top-margin-25 {
+	margin-top: 25px;
 }
 .anger {
 	width: ${requestScope.Anger.scaleToShow()}%;
@@ -36,9 +39,15 @@
 	<div class="container-fluid">
 		<div class="row pushDown">
 			<div class="col-md-12">
-				<div class="col-md-4 text-center"></div>
-				<div class="col-md-4 text-center">
+				<div class="col-md-2 text-center"></div>
+				<div class="col-md-8 text-center">
 					<div class="row text-center">
+						<div class="col-md-12">
+							<span id="helpBlock2" class="help-block text-center">Image sizes
+							show how much angry, sad or happy are the people about ${requestScope.subject}.</span>
+						</div>
+					</div>
+					<div class="row text-center top-margin-25">
 						<div class="col-md-4 text-center">
 							<img class="anger" src="images/emoticon_anger.png" alt="anger" /><br /><br />
 							<span class="label label-danger">Anger</span>
@@ -52,8 +61,15 @@
 							<span class="label label-success">Joy</span>
 						</div>
 					</div>
+					<div class="row text-center top-margin-25">
+						<form role="form" action="/rankSeach">
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-info">Show me what they are talking!</button>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="col-md-4 text-center"></div>
+				<div class="col-md-2 text-center"></div>
 			</div>
 		</div>
 	</div>

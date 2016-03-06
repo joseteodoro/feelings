@@ -15,9 +15,4 @@ public class DefaultRetrieverFactory implements RetrieverFactory {
 		return new DefaultFeelingsRetriever();
 	}
 
-	@Override
-	public RankRetriever setupRankRetriever() {
-		return null;
-	}
-
 }

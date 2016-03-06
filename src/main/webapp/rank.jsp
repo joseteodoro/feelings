@@ -14,6 +14,11 @@
 	crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<style type="text/css">
+.pushDown {
+	margin-top: 20%;
+}
+</style>
 </head>
 <body>
 	<h1 class="cover-heading text-center">Tag cloud</h1>

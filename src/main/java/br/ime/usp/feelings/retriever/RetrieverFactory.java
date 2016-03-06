@@ -6,6 +6,4 @@ public interface RetrieverFactory {
 
 	FeelingsRetriever setupFeelingsRetriever();
 
-	RankRetriever setupRankRetriever();
-
 }

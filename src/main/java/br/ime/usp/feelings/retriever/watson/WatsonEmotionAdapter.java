@@ -1,6 +1,5 @@
 package br.ime.usp.feelings.retriever.watson;
 
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

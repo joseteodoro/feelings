@@ -7,6 +7,7 @@ import java.util.List;
 
 import br.ime.usp.feelings.Feeling;
 import br.ime.usp.feelings.FeelingEnum;
+import br.ime.usp.feelings.RankItens;
 
 public class FakeRetrieverFactory implements RetrieverFactory {
 
@@ -14,7 +15,7 @@ public class FakeRetrieverFactory implements RetrieverFactory {
 	public ContentRetriever setupContentRetriever() {
 		//mocking an internet delay
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -39,11 +40,6 @@ public class FakeRetrieverFactory implements RetrieverFactory {
 				return fls;
 			}
 		};
-	}
-
-	@Override
-	public RankRetriever setupRankRetriever() {
-		return null;
 	}
 
 }

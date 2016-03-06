@@ -33,7 +33,7 @@ public class Feeling {
 	 * @return scaled score.
 	 */
 	public float scaleToShow() {
-		return score*200f+5;
+		return score*100f+5;
 	}
 
 	@Override

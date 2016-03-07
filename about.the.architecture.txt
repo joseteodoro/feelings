@@ -1,0 +1,18 @@
+About the architeture:
+
+I divided the application in 3 layers:
+- View;
+- Actors;
+- Service clients;
+
+I do this to isolate unknown points and to continue the development while solving problems to remote services.
+With the actors I could create fake providers to test the view besides the ratio request limite of Watson and Twitter.
+
+The actors get data from ContentRetriever implementations. For awhile there is just Twitter client, but I divided it
+to enable the extension to Facebook and News client.
+
+I do not share the content data came from Twitter or any ContentRetriever because I do not want to couple the
+different actors. The trade-off requires connect two ore more times to Twitter to get data for each Watson service.
+
+I decided to create the FeelingsActor with generics to enable using different ContentRetriever's and ContentProcessors just trading the implementations. 
+So, we can add new feeders or processors without change on the structure.

@@ -9,11 +9,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.ime.usp.feelings.view.servlet.RankFiller;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import br.ime.usp.feelings.rank.RankItem;
-import br.ime.usp.feelings.retriever.FeelingsActor;
+import br.ime.usp.feelings.serviceClients.processor.rank.RankItem;
+import br.ime.usp.feelings.actor.FeelingsActor;
 
 public class RankFillerTest {
 	

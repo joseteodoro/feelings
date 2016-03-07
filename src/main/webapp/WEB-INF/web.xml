@@ -7,11 +7,11 @@
 	<display-name>How does people feel</display-name>
 	<servlet>
 		<servlet-name>feelingsSeach</servlet-name>
-		<servlet-class>br.ime.usp.feelings.servlet.FeelingServlet</servlet-class>
+		<servlet-class>br.ime.usp.feelings.view.servlet.FeelingServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>rankSeach</servlet-name>
-		<servlet-class>br.ime.usp.feelings.servlet.RankServlet</servlet-class>
+		<servlet-class>br.ime.usp.feelings.view.servlet.RankServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>

@@ -4,8 +4,8 @@ import java.util.Collection;
 
 import org.junit.Assert;
 
-import br.ime.usp.feelings.retriever.content.twitter.Finder;
-import br.ime.usp.feelings.retriever.content.twitter.TwitterFinder;
+import br.ime.usp.feelings.serviceClients.retriever.content.twitter.Finder;
+import br.ime.usp.feelings.serviceClients.retriever.content.twitter.TwitterFinder;
 
 /**
  * 

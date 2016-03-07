@@ -1,5 +1,11 @@
 package br.ime.usp.feelings.feeling;
 
+/**
+ * 
+ * @author jteodoro
+ *
+ * Watson results and its score.
+ */
 public class Feeling {
 
 	private FeelingEnum feeling;

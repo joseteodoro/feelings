@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.ime.usp.feelings.feeling.DefaultFeelingContentFactory;
-import br.ime.usp.feelings.feeling.FakeFeelingContentFactory;
 import br.ime.usp.feelings.feeling.Feeling;
 import br.ime.usp.feelings.retriever.FeelingsActor;
 import br.ime.usp.feelings.retriever.factory.ContentFactory;
@@ -17,7 +16,8 @@ import br.ime.usp.feelings.retriever.factory.ContentFactory;
  * 
  * @author jteodoro
  *
- *         servlet to get the feelings about a subject.
+ *         Resolves the request to evaluate the feelings about content and build
+ *         the feeling page.
  */
 public class FeelingServlet extends HttpServlet {
 
@@ -25,9 +25,9 @@ public class FeelingServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// just for local testing
+		// factory = new FakeFeelingContentFactory();
 		ContentFactory<Feeling> factory;
 		factory = new DefaultFeelingContentFactory();
-		factory = new FakeFeelingContentFactory();
 		FeelingsActor<Feeling> actor = new FeelingsActor<>(factory);
 		FeelingFiller feelingFiller = new FeelingFiller(actor);
 		feelingFiller.fillAndRedirect(request, response);

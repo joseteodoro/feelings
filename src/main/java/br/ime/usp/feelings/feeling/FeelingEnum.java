@@ -1,5 +1,11 @@
 package br.ime.usp.feelings.feeling;
 
+/**
+ * 
+ * @author jteodoro
+ *
+ * Types used in Watson Results.
+ */
 public enum FeelingEnum {
 
 	ANGER("Anger"), DISGUST("Disgust"), FEAR("Fear"), JOY("Joy"), SADNESS("Sadness");

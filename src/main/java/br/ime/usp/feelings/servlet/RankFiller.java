@@ -10,30 +10,50 @@ import javax.servlet.http.HttpServletResponse;
 import br.ime.usp.feelings.rank.RankItem;
 import br.ime.usp.feelings.retriever.FeelingsActor;
 
+/**
+ * 
+ * @author jteodoro
+ * 
+ *         Layer between servlets and the content processors. Call the Rank
+ *         Actor to connect with Bluemix and transform the results to the view.
+ */
 public class RankFiller {
-	
+
 	protected final static String SUBJECT_PARAMETER_NAME = "subject";
 
 	protected static final String REDIRECT_DESTINATION = "/rank.jsp";
 
-	private static final String RANK_PARAMETER_NAME = "ranks";
-	
+	protected static final String RANK_PARAMETER_NAME = "ranks";
+
 	private final FeelingsActor<RankItem> feelingActor;
-	
+
 	public RankFiller(FeelingsActor<RankItem> feelingActor) {
 		this.feelingActor = feelingActor;
 	}
 
-	public void fillAndRedirect(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/**
+	 * Call processor's results and fill the request before redirect to the jsp.
+	 * 
+	 * @param request
+	 *            .
+	 * @param response
+	 *            .
+	 * @throws ServletException
+	 *             .
+	 * @throws IOException
+	 *             .
+	 */
+	public void fillAndRedirect(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String subject = request.getParameter(SUBJECT_PARAMETER_NAME);
 		Collection<RankItem> ranks = getRanks(subject);
 		putRanksOnRequest(request, ranks);
 		redirectWithRanks(request, response);
 	}
-	
+
 	private void redirectWithRanks(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher(REDIRECT_DESTINATION).forward(request,response);
+		request.getRequestDispatcher(REDIRECT_DESTINATION).forward(request, response);
 	}
 
 	private void putRanksOnRequest(HttpServletRequest request, Collection<RankItem> ranks) {

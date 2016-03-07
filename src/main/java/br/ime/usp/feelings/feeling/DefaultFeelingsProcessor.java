@@ -8,6 +8,12 @@ import br.ime.usp.feelings.retriever.watson.WatsonEmotionAdapter;
 import br.ime.usp.feelings.retriever.watson.WatsonFeelingsRetriever;
 import br.ime.usp.feelings.retriever.watson.WatsonRestAlchemyEmotionClient;
 
+/**
+ * 
+ * @author jteodoro
+ *
+ * call Watson to evaluate the emotion on the content.
+ */
 public class DefaultFeelingsProcessor implements ContentProcessor<Feeling> {
 
 	@Override

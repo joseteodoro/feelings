@@ -7,6 +7,12 @@ import br.ime.usp.feelings.retriever.factory.ContentFactory;
 import br.ime.usp.feelings.retriever.factory.ContentProcessor;
 import br.ime.usp.feelings.retriever.factory.ContentRetriever;
 
+/**
+ * 
+ * @author jteodoro
+ * 
+ * Factory to get and get feelings with fake contents. Just for local tests.
+ */
 public class FakeFeelingContentFactory implements ContentFactory<Feeling> {
 
 	@Override

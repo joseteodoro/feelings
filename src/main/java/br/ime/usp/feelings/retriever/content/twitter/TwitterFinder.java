@@ -21,13 +21,29 @@ import twitter4j.conf.Configuration;
  * 
  * @author jteodoro
  *
- *         Ask Twitter about the subject and create our resultset.
+ *         Connect to Twitter and ask about the subject and create our
+ *         resultset.
+ *         
+ * this class uses env vars to connect. You can get this keys in the Twitter developer's
+ * site. 
+ * 
+ * $ export twitter4j.oauth.consumerKey=********************* 
+ * $ export twitter4j.oauth.consumerSecret=**************************************
+ * $ export twitter4j.oauth.accessToken=*****************************************
+ * $ export twitter4j.oauth.accessTokenSecret=***********************************
  */
 public class TwitterFinder implements Finder {
 
 	private final Configuration twitterdAuthConfiguration;
 
 	private Twitter twitter;
+
+	private TwitterFactory setupTwitterFactory() {
+		if (twitterdAuthConfiguration != null) {
+			return new TwitterFactory(twitterdAuthConfiguration);
+		}
+		return new TwitterFactory();
+	}
 
 	public TwitterFinder(Configuration twitterdAuthConfiguration) {
 		this.twitterdAuthConfiguration = twitterdAuthConfiguration;
@@ -52,6 +68,9 @@ public class TwitterFinder implements Finder {
 		return doSearch(encoded);
 	}
 
+	/*
+	 * configure the Twitter connection.
+	 */
 	@Override
 	public void configureConnection() {
 		TwitterFactory factory = setupTwitterFactory();
@@ -80,27 +99,11 @@ public class TwitterFinder implements Finder {
 		return results;
 	}
 
-	private TwitterFactory setupTwitterFactory() {
-		if (twitterdAuthConfiguration != null) {
-			return new TwitterFactory(twitterdAuthConfiguration);
-		}
-		/*
-		 * constructor using env vars: $ export
-		 * twitter4j.oauth.consumerKey=********************* $ export
-		 * twitter4j.oauth.consumerSecret=**************************************
-		 * **** $ export
-		 * twitter4j.oauth.accessToken=*****************************************
-		 * ********* $ export
-		 * twitter4j.oauth.accessTokenSecret=***********************************
-		 * *******
-		 */
-		return new TwitterFactory();
-	}
-
 	/**
 	 * javascript's like hack
 	 * 
-	 * @param s string to encode
+	 * @param s
+	 *            string to encode
 	 * @return encoded string
 	 */
 	public String encodeURIComponent(String s) {

@@ -12,6 +12,12 @@ import br.ime.usp.feelings.retriever.factory.ContentFactory;
 import br.ime.usp.feelings.retriever.factory.ContentProcessor;
 import br.ime.usp.feelings.retriever.factory.ContentRetriever;
 
+/**
+ * 
+ * @author jteodoro
+ * 
+ * Factory to get and rank fake contents. Just for local tests.
+ */
 public class FakeRankItensContentFactory implements ContentFactory<RankItem> {
 
 	@Override

@@ -9,6 +9,15 @@ import java.util.regex.Pattern;
 
 import br.ime.usp.feelings.rank.RankItem;
 
+/**
+ * 
+ * @author jteodoro
+ *
+ * Converter between XML (Relation Extraction Bluemix Service result) 
+ * and RankItens. This code is using REGEX to get only
+ * EVENT and PERSON tags. Just for simplicity.
+ * 
+ */
 public class XmlToRankConverter {
 
 	public static final String EVENT_REGEX = "(<mention).*(etype=\"EVENT).*(mention>)";
@@ -17,6 +26,14 @@ public class XmlToRankConverter {
 
 	private static final String REGEX_CONTENT = "(>).*(<)";
 	
+	/**
+	 * translate the content to RankItens.
+	 * 
+	 * @param content content received from Relation Extraction Bluemix Service (XML).
+	 * 
+	 * @param targetRegexes regex to consider when extracting the tag values.
+	 * @return
+	 */
 	public Collection<RankItem> getRanks(String content, String ... targetRegexes) {
 		Collection<RankItem> ranks = new LinkedList<>();
 		for (String regex : targetRegexes) {

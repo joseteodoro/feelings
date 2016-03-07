@@ -1,5 +1,12 @@
 package br.ime.usp.feelings.rank;
 
+/**
+ * 
+ * @author jteodoro
+ *
+ * Word evaluated by BlueMix Relation Extraction and 
+ * wieghted by its ocurrency.
+ */
 public class RankItem {
 	
 	private int rank;

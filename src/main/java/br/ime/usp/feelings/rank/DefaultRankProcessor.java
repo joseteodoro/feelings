@@ -6,6 +6,13 @@ import br.ime.usp.feelings.rank.xml.XmlToRankConverter;
 import br.ime.usp.feelings.retriever.factory.ContentProcessor;
 import br.ime.usp.feelings.retriever.relationExtraction.WatsonRestRelationExtractionClient;
 
+/**
+ * 
+ * @author jteodoro
+ *
+ * call Bluemix Relation Extraction to get people and events in the content and
+ * count the itens occurrency.
+ */
 public class DefaultRankProcessor implements ContentProcessor<RankItem> {
 
 	private final WatsonRestRelationExtractionClient restClient;

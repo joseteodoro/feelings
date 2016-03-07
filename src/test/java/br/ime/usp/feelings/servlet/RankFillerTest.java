@@ -28,8 +28,8 @@ public class RankFillerTest {
 		HttpServletResponse response = Mockito.mock(HttpServletResponse.class);
 
 		feelingFiller.fillAndRedirect(request, response);
-		Mockito.verify(request).getParameter(RankFiller.SUBJECT_PARAMETER_NAME);
-		Mockito.verify(request).setAttribute(rank.getLabel(), rank);
+		Mockito.verify(request, Mockito.times(2)).getParameter(RankFiller.SUBJECT_PARAMETER_NAME);
+		Mockito.verify(request).setAttribute(RankFiller.RANK_PARAMETER_NAME, ranks);
 		Mockito.verify(request).getRequestDispatcher(RankFiller.REDIRECT_DESTINATION);
 	}
 

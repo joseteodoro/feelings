@@ -3,19 +3,14 @@ package br.ime.usp.feelings.retriever.relationExtraction;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Collection;
-import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.message.BasicNameValuePair;
 
 import br.ime.usp.feelings.retriever.RetrieveException;
 import br.ime.usp.feelings.retriever.watson.WatsonAlchemyEmotionCaller;
@@ -24,16 +19,22 @@ import br.ime.usp.feelings.retriever.watson.WatsonAlchemyEmotionCaller;
  * 
  * @author jteodoro
  *
- * This is a simple client to Watson Alchemy Emotion REST. 
- * It uses an envVar called "watson.alchemy.api.key" to get your API KEY. Be sure it is 
- * declared in your enviroment before call the watson.
+ *         This is a simple client to Watson Alchemy Emotion REST. It uses an
+ *         envVar called "watson.alchemy.api.key" to get your API KEY. Be sure
+ *         it is declared in your enviroment before call the watson.
  * 
  * 
  */
 public abstract class AbstractRestBluemixClient implements WatsonAlchemyEmotionCaller {
 
 	private static final int SUCCESS_CODE = 200;
-	
+
+	/**
+	 * Call Watson / Bluemix to evaluate the content.
+	 * 
+	 * @param subject
+	 *            data to send in the watson's request.
+	 */
 	public String call(String subject) {
 		try {
 			HttpPost postRequest = createRestJsonRequest(subject);
@@ -46,7 +47,16 @@ public abstract class AbstractRestBluemixClient implements WatsonAlchemyEmotionC
 		}
 	}
 
-	private HttpResponse doRequest(HttpPost postRequest) throws IOException{
+	/**
+	 * Configure the request to Watson / Bluemix services.
+	 * 
+	 * @param subject
+	 *            data to send in the watson's request.
+	 * @return the watson/bluemix request to send by httpClient.
+	 */
+	protected abstract HttpPost createRestJsonRequest(String subject);
+
+	private HttpResponse doRequest(HttpPost postRequest) throws IOException {
 		HttpClient httpClient = HttpClientBuilder.create().build();
 		HttpResponse response = httpClient.execute(postRequest);
 		if (response.getStatusLine().getStatusCode() != SUCCESS_CODE) {
@@ -57,8 +67,6 @@ public abstract class AbstractRestBluemixClient implements WatsonAlchemyEmotionC
 		return response;
 	}
 
-	protected abstract HttpPost createRestJsonRequest(String subject);
-	
 	private String responseToString(HttpResponse response) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader((response.getEntity().getContent())));
 		String responseContent = IOUtils.toString(br);

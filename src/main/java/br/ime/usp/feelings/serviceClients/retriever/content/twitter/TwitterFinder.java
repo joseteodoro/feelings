@@ -16,23 +16,32 @@ import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.conf.Configuration;
+import twitter4j.conf.ConfigurationBuilder;
 
 /**
- * 
+ *
  * @author jteodoro
  *
  *         Connect to Twitter and ask about the subject and create our
  *         resultset.
- *         
+ *
  * this class uses env vars to connect. You can get this keys in the Twitter developer's
- * site. 
- * 
- * $ export twitter4j.oauth.consumerKey=********************* 
+ * site.
+ *
+ * $ export twitter4j.oauth.consumerKey=*********************
  * $ export twitter4j.oauth.consumerSecret=**************************************
  * $ export twitter4j.oauth.accessToken=*****************************************
  * $ export twitter4j.oauth.accessTokenSecret=***********************************
  */
 public class TwitterFinder implements Finder {
+
+    private static final String CONSUMER_KEY = "twitter4j.oauth.consumerKey";
+
+    private static final String CONSUMER_SECRET = "twitter4j.oauth.consumerSecret";
+
+    private static final String TOKEN = "twitter4j.oauth.accessToken";
+
+    private static final String TOKEN_SECRET = "twitter4j.oauth.accessTokenSecret";
 
 	private final Configuration twitterdAuthConfiguration;
 
@@ -50,16 +59,21 @@ public class TwitterFinder implements Finder {
 	}
 
 	public TwitterFinder() {
-		this.twitterdAuthConfiguration = null;
+		ConfigurationBuilder cb = new ConfigurationBuilder();
+		cb.setOAuthConsumerKey(System.getProperty(CONSUMER_KEY))
+				.setOAuthConsumerSecret(System.getProperty(CONSUMER_SECRET))
+				.setOAuthAccessToken(System.getProperty(TOKEN))
+				.setOAuthAccessTokenSecret(System.getProperty(TOKEN_SECRET));
+		this.twitterdAuthConfiguration = cb.build();
 	}
 
 	/*
 	 * Call the method configureConnection() before call this method.
-	 * 
+	 *
 	 * Ask Twitter about the subject and create a list with the text messages.
-	 * 
+	 *
 	 * @param subject subject to ask twitter
-	 * 
+	 *
 	 * @return a collection with the messages.
 	 */
 	@Override
@@ -92,7 +106,8 @@ public class TwitterFinder implements Finder {
 				}
 			} while ((query = result.nextQuery()) != null);
 		} catch (TwitterException tex) {
-			String messageError = String.format("Error getting data from Twitter. Query: [%s].", queryString);
+			String messageError = String.format("Error getting data from Twitter. Query: [%s]:[%s][%s].",
+                    queryString, System.getProperty(CONSUMER_KEY), System.getProperty(TOKEN));
 			Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, messageError, tex);
 			throw new RetrieveException(messageError, tex);
 		}
@@ -101,7 +116,7 @@ public class TwitterFinder implements Finder {
 
 	/**
 	 * javascript's like hack
-	 * 
+	 *
 	 * @param s
 	 *            string to encode
 	 * @return encoded string

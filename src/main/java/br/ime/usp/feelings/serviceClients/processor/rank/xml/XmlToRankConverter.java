@@ -1,9 +1,6 @@
 package br.ime.usp.feelings.serviceClients.processor.rank.xml;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -60,7 +57,24 @@ public class XmlToRankConverter {
 	private Collection<RankItem> convertItensToRankItens(Map<String, Integer> ratio) {
 		Collection<RankItem> itens = new LinkedList<>();
 		ratio.forEach((key, value) -> itens.add(new RankItem(value, key)));
-		return itens;
+		return this.getTop30(itens);
+	}
+
+	private Collection<RankItem> getTop30(Collection<RankItem> itens) {
+		List<RankItem> sortedItens = new ArrayList<>(itens);
+		Comparator<? super RankItem> comparator = this.setupComparator();
+		sortedItens.sort(comparator);
+		int cutPoint = sortedItens.size() > 30 ? 30 : sortedItens.size();
+		return sortedItens.subList(0, cutPoint) ;
+	}
+
+	private Comparator<? super RankItem> setupComparator() {
+		return new Comparator<RankItem>() {
+			@Override
+			public int compare(RankItem o1, RankItem o2) {
+				return Integer.compare(o2.getRank(), o1.getRank());
+			}
+		};
 	}
 
 
